@@ -26,9 +26,12 @@
     <bean id="logAspect" class="com.portfolio.aspect.LoggingAspect"/>
     <bean id="mapper" class="org.codehaus.jackson.map.ObjectMapper"/>
 
-    <!-- Mongo config -->
-    <mongo:db-factory id="mongoDbFactory" username="admin" password="J4s6KTsiuhlX"
-    	dbname="portfolioos" host="127.12.210.130" port="27017" />
+    <!-- Mongo config OPENSHIFT -->
+    <!--mongo:db-factory id="mongoDbFactory" username="admin" password="J4s6KTsiuhlX"
+    	dbname="portfolioos" host="127.12.210.130" port="27017" /-->
+
+    <mongo:db-factory id="mongoDbFactory" dbname="db_portfolio" />
+
 
     <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
         <constructor-arg ref="mongoDbFactory" />

@@ -94,8 +94,8 @@ $(function(){
             return _this;
         },
         addHandlers: function(){
-            $('#download').button();
-            $('#linkedInUrl').button();
+            //$('#download').button();
+            //$('#linkedInUrl').button();
         }
     });
 
@@ -198,24 +198,24 @@ $(function(){
         },
         addHandlers: function(){
             var _this = this;
-            $('#radioset').buttonset();
-            $('#rb-about').button().click(function (event) {
-                return _this.about();
-            });
-            $('#rb-portfolio').button().click(function (event) {
-                return _this.portfolio();
-            });
-            $('#rb-technologies').button().click(function (event) {
-                return _this.technologies();
-            });
-            ;
-            $('#rb-testimonials').button().click(function (event) {
-                return _this.testimonials();
-            });
-            ;
-            $('#rb-contact-me').button().click(function (event) {
-                return _this.contactMe();
-            });
+//            $('#radioset').buttonset();
+//            $('#rb-about').button().click(function (event) {
+//                return _this.about();
+//            });
+//            $('#rb-portfolio').button().click(function (event) {
+//                return _this.portfolio();
+//            });
+//            $('#rb-technologies').button().click(function (event) {
+//                return _this.technologies();
+//            });
+//            ;
+//            $('#rb-testimonials').button().click(function (event) {
+//                return _this.testimonials();
+//            });
+//            ;
+//            $('#rb-contact-me').button().click(function (event) {
+//                return _this.contactMe();
+//            });
         },
         header: function(){
             var v_header = new HeaderView();
@@ -241,17 +241,17 @@ $(function(){
         {
             if(!_.isEmpty(this.v_shown))
             {
-              this.v_shown.el.style.display='none';
-              this.v_shown.$el.stop().animate({
-                  top: '100%'
-              }, 1500);
+//              this.v_shown.el.style.display='none';
+//              this.v_shown.$el.stop().animate({
+//                  top: '100%'
+//              }, 1500);
             }
             this.v_shown = v_to_show;
-            v_to_show.render();
-            v_to_show.el.style.display = "block";
-            v_to_show.$el.stop().animate({
-                'top': '80px'
-            }, 1500,"easeOutQuart");
+//            v_to_show.render();
+//            v_to_show.el.style.display = "block";
+//            v_to_show.$el.stop().animate({
+//                'top': '80px'
+//            }, 1500,"easeOutQuart");
             return v_to_show;
         }
     });
