@@ -28,7 +28,11 @@
 
     <!-- Mongo config -->
     <mongo:db-factory id="mongoDbFactory" host="localhost"
+<<<<<<< HEAD
                       port="27017" dbname="portfolioos" />
+=======
+                      port="27017" dbname="jbossews" />
+>>>>>>> c3a406e1d7989931bef182f119eeb2a2ca5d4c2a
 
     <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
         <constructor-arg ref="mongoDbFactory" />
