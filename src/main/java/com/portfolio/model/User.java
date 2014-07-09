@@ -1,5 +1,7 @@
 package com.portfolio.model;
 
+import java.util.List;
+
 /**
  * Created by e7006722 on 25/02/14.
  */
@@ -11,6 +13,7 @@ public class User {
     private Address address;
     private Contact contact;
     private String email;
+    private String skill;
 
     @Override
     public String toString() {
@@ -24,8 +27,17 @@ public class User {
         sb.append(", email='").append(email).append('\'');
         sb.append(", linkedInUrl='").append(linkedInUrl).append('\'');
         sb.append(", about='").append(about).append('\'');
+        sb.append(", skill='").append(skill).append('\'');
         sb.append('}');
         return sb.toString();
+    }
+
+    public String getSkill() {
+        return skill;
+    }
+
+    public void setSkill(String skill) {
+        this.skill = skill;
     }
 
     public String getEmail() {
@@ -56,13 +68,13 @@ public class User {
     }
 
     private String linkedInUrl;
-    private String about;
+    private List<String> about;
 
-    public String getAbout() {
+    public List<String> getAbout() {
         return about;
     }
 
-    public void setAbout(String about) {
+    public void setAbout(List<String> about) {
         this.about = about;
     }
 

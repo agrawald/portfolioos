@@ -26,6 +26,10 @@ $(function(){
         }
     });
 
+    //--------------------------------------------------------------------------
+    //Views
+    //--------------------------------------------------------------------------
+
     var GenericView = Backbone.View.extend({
         collections: new PortfolioCollection(),
         initialize: function(){
@@ -44,9 +48,8 @@ $(function(){
             })
         },
         render: function(model){
-            if(!_.isUndefined(model))
+            if(!_.isUndefined(model) && !_.isUndefined(this.template))
             {
-                console.log("In render" + model);
                 var hb_template = Handlebars.compile(this.template);
                 var html = hb_template(model.toJSON());
                 this.$el.html(html);
@@ -56,47 +59,24 @@ $(function(){
         }
     });
 
-    var DialogView = Backbone.View.extend({
-        el:'#dialog',
-        template: $('#tDialog').html(),
-        render: function(model){
-            if(!_.isUndefined(model))
-            {
-                console.log("In render" + model);
-                var hb_template = Handlebars.compile(this.template);
-                var html = hb_template(model);
-                this.$el.html(html);
-                $('#dialog').dialog();
-            }
-        }
-    });
-
-    var PortfolioView = GenericView.extend({
-        el:'#portfolio',
-        template: $('#tPortfolio').html(),
-        render: function(model){
-            var _this = GenericView.prototype.render.call(this, model);
-            this.addHandlers();
-            return _this;
-        },
-        addHandlers:function(){
-            $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-            $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-        }
+    var NavigationView = GenericView.extend({
+        el: '#navigation',
+        template: $('#tNavigation').html()
     });
 
     var HeaderView = GenericView.extend({
         el: '#header',
-        template: $('#tHeader').html(),
-        render:function(model){
-            var _this = GenericView.prototype.render.call(this, model);
-            this.addHandlers();
-            return _this;
-        },
-        addHandlers: function(){
-            //$('#download').button();
-            //$('#linkedInUrl').button();
-        }
+        template: $('#tHeader').html()
+    });
+
+    var PortfolioView = GenericView.extend({
+        el:'#portfolio',
+        template: $('#tPortfolio').html()
+    });
+
+    var PortFolioModelsView = GenericView.extend({
+        el:'#portFolioModels',
+        template: $('#tPortFolioModels').html()
     });
 
     var AboutView = GenericView.extend({
@@ -114,15 +94,16 @@ $(function(){
         template: $('#tTestimonials').html()
     });
 
+    var FooterView = GenericView.extend({
+        el: '#footer',
+        template: $('#tFooter').html()
+    });
+
+
     var ContactMeView = GenericView.extend({
-        el: '#contactMe',
-        template: $('#tContactMe').html(),
+        el: '#contact',
+        template: $('#tContact').html(),
         emailRegEx: /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i,
-        render: function(model){
-            var _this = GenericView.prototype.render.call(this, model);
-            this.addHandlers();
-            return _this;
-        },
         validate: function()
         {
             if(_.isEmpty($('#name').val()))
@@ -177,82 +158,41 @@ $(function(){
                     }
                 });
             }
-        },
-        addHandlers: function(){
-            var _this = this;
-            $('#submit').button().click(function (event) {
-                return _this.submit(event);
-            });
         }
     });
 
+    var DialogView = Backbone.View.extend({
+        el:'#dialog',
+        template: $('#tDialog').html(),
+        render: function(model){
+            if(!_.isUndefined(model))
+            {
+                console.log("In render" + model);
+                var hb_template = Handlebars.compile(this.template);
+                var html = hb_template(model);
+                this.$el.html(html);
+                $('#dialog').dialog();
+            }
+        }
+    });
+
+    //--------------------------------------------------------------------------
+    //Router
+    //--------------------------------------------------------------------------
     var PortfolioRouter = Backbone.Router.extend({
         routes:{
-            '': 'about'
+            '': 'header'
         },
-        v_shown: '',
         initialize: function(){
-            this.header();
-            this.v_shown=this.about();
-            this.addHandlers();
-        },
-        addHandlers: function(){
-            var _this = this;
-//            $('#radioset').buttonset();
-//            $('#rb-about').button().click(function (event) {
-//                return _this.about();
-//            });
-//            $('#rb-portfolio').button().click(function (event) {
-//                return _this.portfolio();
-//            });
-//            $('#rb-technologies').button().click(function (event) {
-//                return _this.technologies();
-//            });
-//            ;
-//            $('#rb-testimonials').button().click(function (event) {
-//                return _this.testimonials();
-//            });
-//            ;
-//            $('#rb-contact-me').button().click(function (event) {
-//                return _this.contactMe();
-//            });
-        },
-        header: function(){
-            var v_header = new HeaderView();
-            v_header.render();
-            return v_header;
-        },
-        about: function(){
-            return this.showView(new AboutView());
-        },
-        portfolio: function(){
-            return this.showView(new PortfolioView());
-        },
-        technologies: function(){
-            return this.showView(new TechnologiesView());
-        },
-        testimonials: function(){
-            return this.showView(new TestimonialsView());
-        },
-        contactMe: function(){
-            return this.showView(new ContactMeView());
-        },
-        showView: function(v_to_show)
-        {
-            if(!_.isEmpty(this.v_shown))
-            {
-//              this.v_shown.el.style.display='none';
-//              this.v_shown.$el.stop().animate({
-//                  top: '100%'
-//              }, 1500);
-            }
-            this.v_shown = v_to_show;
-//            v_to_show.render();
-//            v_to_show.el.style.display = "block";
-//            v_to_show.$el.stop().animate({
-//                'top': '80px'
-//            }, 1500,"easeOutQuart");
-            return v_to_show;
+            new NavigationView().render();
+            new HeaderView().render();
+            new AboutView().render();
+            new PortfolioView().render();
+            new PortFolioModelsView().render();
+            new TechnologiesView().render();
+            new TestimonialsView().render();
+            new ContactMeView().render();
+            new FooterView().render();
         }
     });
 

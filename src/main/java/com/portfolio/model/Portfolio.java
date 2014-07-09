@@ -24,8 +24,16 @@ public class Portfolio {
     private List<Testimonial> allTestimonials = new ArrayList<Testimonial>();
     private List<Project> personalProjects = new ArrayList<Project>();
     private boolean enabled = false;
-    private String about;
     private String contactMe;
+    private String about;
+
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
+    }
 
     @Override
     public String toString() {
@@ -37,7 +45,6 @@ public class Portfolio {
                 ", allTestimonials=" + allTestimonials +
                 ", personalProjects=" + personalProjects +
                 ", enabled=" + enabled +
-                ", about='" + about + '\'' +
                 ", contactMe='" + contactMe + '\'' +
                 '}';
     }
@@ -56,14 +63,6 @@ public class Portfolio {
 
     public void setContactMe(String contactMe) {
         this.contactMe = contactMe;
-    }
-
-    public String getAbout() {
-        return about;
-    }
-
-    public void setAbout(String about) {
-        this.about = about;
     }
 
     public Portfolio(User user) {

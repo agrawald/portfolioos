@@ -1,8 +1,72 @@
 /**
  * Created by e7006722 on 4/03/14.
  */
+Handlebars.registerHelper('about', function(items, options) {
+    /*<div class="col-lg-4 col-lg-offset-2">
+     <p>{{escape this}}</p>
+     </div>
+     <div class="col-lg-4">
+     <p>{{escape this}}</p>
+     </div>*/
+
+    var evenDiv = "<div class='col-lg-4 col-lg-offset-2'>";
+    var oddDiv = "<div class='col-lg-4'>";
+    for(var i=0, l=items.length; i<l; i++) {
+        if(i%2==0)
+            evenDiv = evenDiv + "<p>" + items[i] + "</p>";
+        else
+            oddDiv = oddDiv + "<p>" + items[i] + "</p>";
+    }
+
+    evenDiv = evenDiv + "</div>";
+    oddDiv = oddDiv + "</div>";
+    return evenDiv + oddDiv;
+});
+
+Handlebars.registerHelper('idOf', function(name) {
+    return name.replace(/[^a-zA-Z0-9]/g, "_");
+});
+
+Handlebars.registerHelper('escape', function(text) {
+    return Handlebars.Utils.escapeExpression(text);
+});
+
+Handlebars.registerHelper('fullName', function(user, options) {
+    return options.fn(user).toUpperCase();
+});
+
+Handlebars.registerHelper('address', function(address) {
+    return address.unit + "/"
+        + address.plot + ", "
+        + address.road + " " + address.type
+        + "<br>"+ address.suburb + ", "
+        + address.state + " "
+        + address.zipcode;
+});
+
+
+Handlebars.registerHelper('tech', function(items, options) {
+    /*<ul class="list-inline item-details">
+     <li>Client: <strong><a href="#">{{client}}</a></strong>
+     </li>
+     <li>Service: <strong><a href="#">{{designation}}</a></strong>
+     </li>
+     </ul>*/
+    var out = "<ul class='list-inline item-details'>";
+
+    for(var i=0, l=items.length; i<l; i++) {
+        if(options.fn(items[i]) == "")
+            out = out + "<li><strong><a href='#'>" + items[i] + "</a></strong></li>";
+        else
+            out = out + "<li><strong><a href='#'>" + options.fn(items[i]) + "</a></strong></li>";
+    }
+
+    return out + "</ul>";
+});
+
+
 Handlebars.registerHelper('list', function(items, options) {
-    var out = "<ol>";
+    var out = "<ul class='list-inline item-details'>";
 
     for(var i=0, l=items.length; i<l; i++) {
         if(options.fn(items[i]) == "")
@@ -11,76 +75,22 @@ Handlebars.registerHelper('list', function(items, options) {
             out = out + "<li>" + options.fn(items[i]) + "</li>";
     }
 
-    return out + "</ol>";
-});
-
-Handlebars.registerHelper('technology', function (items, options) {
-    var out = "<ol>";
-
-    for (var i = 0, l = items.length; i < l; i++) {
-        if(options.fn(items[i]) == "")
-            out = out + "<li class='show-bean'>" + items[i] + "</li>";
-        else
-            out = out + "<li class='show-bean'>" + options.fn(items[i]) + "</li>";
-    }
-
-    return out+"</ol>";
-});
-
-Handlebars.registerHelper('escape', function(text) {
-    return Handlebars.Utils.escapeExpression(text);
+    return out + "</ul>";
 });
 
 //Handlebars.registerHelper('technology', function (items, options) {
-//    var out = "";
+//    var out = "<ol>";
 //
 //    for (var i = 0, l = items.length; i < l; i++) {
-//        if (options.fn(items[i]) == "")
-//            out = out + " " + items[i] + " ";
+//        if(options.fn(items[i]) == "")
+//            out = out + "<li class='show-bean'>" + items[i] + "</li>";
 //        else
-//            out = out + " " + options.fn(items[i]) + " ";
+//            out = out + "<li class='show-bean'>" + options.fn(items[i]) + "</li>";
 //    }
 //
-//    return out;
+//    return out+"</ol>";
 //});
 
-Handlebars.registerHelper('fullName', function(user, options) {
-    return options.fn(user).toUpperCase();
-});
-
-Handlebars.registerHelper('contact', function(contact, options){
-    return options.fn(contact);
-});
-
-Handlebars.registerHelper('tabs', function(organisations, options){
-    var out ="<ul class='ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all' role='tablist'>";
-
-    for(var i=0, l=organisations.length; i<l; i++) {
-        if(i==0)
-            out+="<li class='ui-state-default ui-corner-top ui-tabs-active ui-state-active' " +
-                "role='tab' tabindex='0' aria-controls='tabs-"+(i+1)+"' aria-labelledby='ui-id-"+(i+2)+"' " +
-                "aria-selected='true'><a href='#tabs-"+(i+1)+"' class='ui-tabs-anchor' role='presentation' " +
-                "tabindex='-1' id='ui-id-"+(i+2)+"'>"+organisations[i].name+"</a></li>";
-        else
-            out+="<li class='ui-state-default ui-corner-top' role='tab' tabindex='-1' " +
-                "aria-controls='tabs-"+(i+1)+"' aria-labelledby='ui-id-"+(i+2)+"' aria-selected='false'>" +
-                "<a href='#tabs-"+(i+1)+"' class='ui-tabs-anchor' role='presentation' " +
-                "tabindex='-1' id='ui-id-"+(i+2)+"'>"+organisations[i].name+"</a></li>";
-    }
-
-    out+="</ul>";
-
-    for(var i=0, l=organisations.length; i<l; i++) {
-        out+="<div id='tabs-"+(i+1)+"' aria-labelledby='ui-id-"+(i+2)+"' " +
-            "class='ui-tabs-panel ui-widget-content ui-corner-bottom' role='tabpanel' ";
-
-        if(i==0)
-            out += "aria-expanded='true' aria-hidden='false' style='display: block;overflow: auto;'>";
-        else
-            out += "aria-expanded='false' aria-hidden='true' style='display: none;overflow: auto;'>"
-
-        out+=options.fn(organisations[i])+"</div>";
-    }
-
-    return out + "</div>";
-});
+//Handlebars.registerHelper('contact', function(contact, options){
+//    return options.fn(contact);
+//});

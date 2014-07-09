@@ -1,270 +1,276 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link href="css/common/bootstrap.min.css" rel="stylesheet">
+<html lang="en"><head>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>Dheeraj Agrawal - Portfolio</title>
 
-    <script id="tHeader" type="text/template">
-        <table class="left">
-            <tr>
-                <td class="wider left">
-                    <h2>{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</h2>
-                </td>
-                <!--<td class="right">-->
-                    <!--{{#contact user.contact}}-->
-                    <!--M:{{mobile}}&nbsp;H:{{phone}}-->
-                    <!--{{/contact}}-->
-                <!--</td>-->
-                <td class="right">
-                    <div id="radioset" class="ui-buttonset">
-                    <button id="linkedInUrl"
-                            class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only"
-                            role="button"
-                            aria-disabled="false"
-                            title="Let's Linked In">
-                        <span class="ui-button-text">
-                            <a href="{{user.linkedInUrl}}" class="link" target="_blank"><img src="ico/linkedin.png"></a>
-                        </span>
-                    </button>
-                    <button id="download"
-                            class="ui-button ui-widget ui-state-default ui-corner-right ui-button-text-only"
-                            role="button"
-                            aria-disabled="false"
-                            title="Download CV">
-                        <span class="ui-button-text">
-                            <a href="/api/download/{{user.userId}}" class="link" target="_self"><img src="ico/go_down.png"></a>
-                        </span>
-                    </button>
-                    </div>
-                </td>
-            </tr>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/freelancer.css" rel="stylesheet" type="text/css">
 
-        </table>
-    </script>
-    <script id="tAbout" type="text/template">
-        <h2>About me...</h2>
-        <span class="about">{{escape user.about}}</span>
-    </script>
-    <script id="tPortfolio" type="text/template">
-        <h2>Portfolio</h2>
-        <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
-            {{#tabs organisations}}
-                <p>{{designation}} - ({{startDt}}-{{endDt}})</p>
-                {{#list projects}}
-                <div>
-                    <h3>{{name}} - {{role}} - {{client}}</h3>
-                    <p>{{description}}</p>
-                    <div>
-                        <h4>Responsibilities</h4>
-                        {{#list responsibilities}}{{/list}}
-                    </div>
-                    <div>
-                        <h4>Technologies</h4>
-                        <div>{{#technology technologies}} {{name}} {{/technology}}</div>
-                    </div>
-                </div>
-                {{/list}}
-            {{/tabs}}
-        </div>
-    </script>
-    <script id="tTechnologies" type="text/template">
-        <h2>Skill Set</h2>
-        {{#technology allTechnologies}}
-            {{name}}
-        {{/technology}}
-    </script>
-    <script id="tTestimonials" type="text/template">
-        <!--{{#each allTestimonials}}-->
-        <!--<p>"{{description}}"</p>-->
-        <!--<p>{{project}}</p>-->
-        <!--{{/each}}-->
-        <h2>Personal Projects</h2>
-        {{#list personalProjects}}
-        <h3>{{name}}</h3>
-        <p>{{description}}</p>
-        <h4>Responsibilities</h4>
-        {{#list responsibilities}}{{/list}}
-        <h4>Technologies</h4>
-        <div>{{#technology technologies}} {{name}} {{/technology}}</div>
-        {{/list}}
-    </script>
-    <script id="tContactMe" type="text/template">
-        <table class="table">
-            <tr>
-                <td colspan="2" class="center"><h2>Contact Me</h2></td>
-            </tr>
-            <tr>
-                <td class="contact">{{contactMe}}</td>
-                <td>
-                    <form id="frmContact">
-                        <input type="hidden" id="userId" value="{{user.userId}}">
-                        <table class="table">
-                            <tr class="row">
-                                <td class="right"><label path="name">Name<span class="required">*</span>&nbsp;</label></td>
-                                <td class="left"><input path="name" id="name" class="ui-corner-all"/></td>
-                            </tr>
-                            <tr class="row">
-                                <td class="right"><label path="email">Email<span class="required">*</span>&nbsp;</label></td>
-                                <td class="left"><input path="email" id="email" class="ui-corner-all"/></td>
-                            </tr>
-                            <tr class="row">
-                                <td class="right"><label path="contact">Telephone</label>&nbsp;</td>
-                                <td class="left"><input path="contact" id="contact" class="ui-corner-all"/></td>
-                            </tr>
-                            <tr class="row">
-                                <td class="right" style="vertical-align: top"><label path="message">Message</label>&nbsp;</td>
-                                <td class="left"><textarea path="message" id="message" class="ui-corner-all" style="margin: 2px; height: 174px; width: 387px;"></textarea></td>
-                            </tr>
-                            <tr class="row">
-                                <td class="right" colspan="2">
-                                    <button class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only"
-                                            role="button"
-                                            aria-disabled="false" type="reset">
-                                        <span class="ui-button-text">Clear</a></span>
-                                    </button>
-                                    <button id="submit"
-                                            class="ui-button ui-widget ui-state-default ui-corner-right ui-button-text-only"
-                                            role="button"
-                                            aria-disabled="false" type="submit">
-                                        <span class="ui-button-text">Submit</a></span>
-                                    </button>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                </td>
-            </tr>
-        </table>
-    </script>
-    <script id="tDialog" type="text/template">
-        <p>{{escape message}}</p>
-    </script>
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<!--body class="center">
-<div class="wrapper center">
-    <table class="left">
-        <tr>
-            <td><div id="header" class="title"></div></td>
-            <td><div id="radioset" class="ui-buttonset">
-                <input type="radio" id="rb-about" name="radio" checked="checked" class="ui-helper-hidden-accessible"
-                       value="about">
-                <label for="rb-about"
-                       class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left"
-                       role="button" aria-disabled="false" title="About me">
-                    <span class="ui-button-text"><img src="ico/message_information.png"></span>
-                </label>
 
-                <input type="radio" id="rb-portfolio" name="radio" class="ui-helper-hidden-accessible">
-                <label for="rb-portfolio" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button"
-                       aria-disabled="false"  title="My Portfolio">
-                    <span class="ui-button-text"><img src="ico/portfolio.png"></span>
-                </label>
+<body id="page-top" class="index">
 
-                <input type="radio" id="rb-technologies" name="radio" class="ui-helper-hidden-accessible">
-                <label for="rb-technologies" class="ui-button ui-widget ui-state-default ui-button-text-only"
-                       role="button"
-                       aria-disabled="false"  title="Skills">
-                    <span class="ui-button-text"><img src="ico/high_technology_idisk.png"></span>
-                </label>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+    <script id="tNavigation" type="text/template">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</a>
+            </div>
 
-                <input type="radio" id="rb-testimonials" name="radio" class="ui-helper-hidden-accessible">
-                <label for="rb-testimonials" class="ui-button ui-widget ui-state-default ui-button-text-only"
-                       role="button"
-                       aria-disabled="false" title="Personal Projects">
-                    <span class="ui-button-text"><img src="ico/thumbs_up.png"></span>
-                </label>
-
-                <input type="radio" id="rb-contact-me" name="radio" class="ui-helper-hidden-accessible">
-                <label for="rb-contact-me"
-                       class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right"
-                       role="button" aria-disabled="false"  title="Contact Me">
-                    <span class="ui-button-text"><img src="ico/contact.png"></span>
-                </label>
-
-            </div></td>
-        </tr>
-    </table>
-    <div class="left">
-        <div id="about"></div>
-        <div id="portfolio"></div>
-        <div id="technologies"></div>
-        <div id="testimonials"></div>
-        <div id="contactMe" class="center"></div>
-    </div>
-    <div id="dialog" title="Message"></div>
-</div>
-</body-->
-
-<body>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
+        <!-- /.container-fluid -->
+    </script>
+</nav>
+
+<header id="header">
+    <script id="tHeader" type="text/template">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}">
+                    <div class="intro-text">
+                        <span class="name">{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</span>
+                        <hr class="star-light">
+                        <span class="skills">{{escape user.skill}}</span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
+            </div>
+        </div>
+    </script>
+</header>
+
+<section id="portfolio">
+    <script id="tPortfolio" type="text/template">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
                 </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-        </div><!--/.navbar-collapse -->
-    </div>
-</div>
+            </div>
+            <div class="row">
+                {{#each organisations}}
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#{{idOf name}}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="{{name}}">
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </script>
+</section>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
+<section class="success" id="about">
+    <script id="tAbout" type="text/template">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                {{#about user.about}}{{/about}}
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="/api/download/{{user.userId}}" class="btn btn-lg btn-outline" >
+                        <i class="fa fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </script>
+</section>
+
+<section id="contact">
     <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more »</a></p>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Contact Me</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <form role="form">
+                    <div class="row">
+                        <div class="form-group col-xs-12 floating-label-form-group">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" name="name" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12 floating-label-form-group">
+                            <label for="email">Email Address</label>
+                            <input class="form-control" type="email" name="email" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12 floating-label-form-group">
+                            <label for="message">Message</label>
+                            <textarea placeholder="Message" class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-lg btn-success">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+</section>
+
+<footer class="text-center" id="footer">
+    <script id="tFooter" type="text/template">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>{{{address user.address}}}</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li><a href="{{escape user.facebookUrl}}" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li><a href="{{escape user.googlePlusUrl}}" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="{{escape user.linkedInUrl}}" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Portfolio</h3>
+                        {{{this.about}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright © 2014 - {{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+</footer>
+
+<div class="scroll-top page-scroll visible-xs visble-sm">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
 </div>
 
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+<!-- Portfolio Modals -->
+<div id="portFolioModels">
+    <script id="tPortFolioModels" type="text/template">
+    {{#each organisations}}
+    <div class="portfolio-modal modal fade" id="{{idOf name}}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{name}}</h2>
+                            <h4>{{startDt}} - {{endDt}}</h4>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+                {{#each projects}}
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{name}}</h2>
+                            <hr class="star-light">
+                            <p>{{description}}</p>
+                            <ul class="list-inline item-details">
+                                <li>Client: <strong><a href="#">{{client}}</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="#">{{role}}</a></strong>
+                                </li>
+                            </ul>
+                            <p>Responsibilities: {{#list responsibilities}}{{/list}}</p>
+                            <p>Technologies: {{#tech technologies}} {{name}} {{/tech}}</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
         </div>
     </div>
+    {{/each}}
+    </script>
+</div>
 
-    <hr>
-
-    <footer>
-        <p>© Company 2014</p>
-    </footer>
-</div> <!-- /container -->
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/common/jquery-1.10.2.js"></script>
 <script src="js/common/bootstrap.min.js"></script>
-<script src="js/common/jquery.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/common/classie.js"></script>
+<script src="js/common/cbpAnimatedHeader.js"></script>
+<script src="js/common/freelancer.js"></script>
 <script src="js/common/json.js"></script>
 <script src="js/common/underscore.js"></script>
 <script src="js/common/handlebars.js"></script>
@@ -272,6 +278,5 @@
 <script src="js/helper.js"></script>
 <script src="js/portfolio.js"></script>
 
-</body>
 
-</html>
+</body></html>

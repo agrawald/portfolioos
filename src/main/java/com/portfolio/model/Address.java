@@ -9,6 +9,15 @@ public class Address {
     private String unit;
     private String plot;
     private String road;
+    private String state;
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
 
     public Address() {
     }

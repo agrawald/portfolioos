@@ -1,4 +1,7 @@
-{"id": "532649889bf18936eeef6106", "enabled": true, "about": null,
+{
+    "id": "532649889bf18936eeef6106",
+    "enabled": true,
+    "about": "Portfolio is a web application created using <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>, <a href='http://backbonejs.org/' target='_blank'>Backbone</a>, <a href='http://spring.io/' target='_blank'>Spring</a>, <a href='https://www.openshift.com/' target='_blank'>MongoDB</a> and hosted on <a href='https://www.openshift.com/' target='_blank'>OpenShift Online</a>.",
     "user": {
         "address": {
             "type": "Avenue",
@@ -6,19 +9,28 @@
             "zipcode": 3183,
             "unit": "5",
             "road": "Loch",
-            "plot": "20"
+            "plot": "20",
+            "state": "VIC"
         },
         "linkedInUrl": "https://au.linkedin.com/in/dheerajagrawal/",
+        "facebookUrl": "http://facebook.com/gmat.dheeraj",
+        "googlePlusUrl": "http://google.com/+DheerajAgrawal7",
         "password": "someencryptedpassword",
         "firstName": "Dheeraj",
         "lastName": "Agrawal",
-        "about": "An ingenious, productive and team-oriented individual with 8+ years of international experience in product/software architecture design and development.\n\nExperienced working in Scrum, Agile, ITIL and Test driven development (TDD) methodologies around technologies and frame works such as J2EE, Spring. Hibernate, GWT, Struts, Oracle and MS SQL Server in domain areas of Product Life-ycle Management (PLM), Life Insurance Underwriting, Project Management, Telecom, Supply Chain Management (SCM) and Travel industry.\nExcellent communication skills, dependable, proactive, flexible personality with a character for innovative and cost effective problem solving skills and capable of working well in team as well as individual contributor.\n\nFast learner, sagacious and inquisitive to learn new technologies.\n\nHighly skilled and capable software professional with spacious skills in software analysis, design, and development.\n\nAbility to bridge gap between technical and business teams to ensure efficiency while developing and delivery of product/software.",
+        "about": ["An ingenious, productive and team-oriented individual with 8+ years of international experience in product/software architecture design and development."
+            ,"Experienced working in Scrum, Agile, ITIL and Test driven development (TDD) methodologies around technologies and frame works such as J2EE, Spring. Hibernate, GWT, Struts, Oracle and MS SQL Server in domain areas of Product Life-ycle Management (PLM), Life Insurance Underwriting, Project Management, Telecom, Supply Chain Management (SCM) and Travel industry."
+            ,"Excellent communication skills, dependable, proactive, flexible personality with a character for innovative and cost effective problem solving skills and capable of working well in team as well as individual contributor."
+            ,"Fast learner, sagacious and inquisitive to learn new technologies."
+            ,"Highly skilled and capable software professional with spacious skills in software analysis, design, and development."
+            ,"Ability to bridge gap between technical and business teams to ensure efficiency while developing and delivery of product/software."],
         "userId": "dagrawal",
         "contact": {
             "phone": null,
             "mobile": "+61470020152"
         },
-        "email": "agrawal.dheeraj.7@gmail.com"
+        "email": "agrawal.dheeraj.7@gmail.com",
+        "skill": "Java / J2EE Software Developer"
     }, "organisations": [
     {
         "name": "Victoria University",
