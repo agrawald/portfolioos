@@ -84,16 +84,6 @@ $(function(){
         template: $('#tAbout').html()
     });
 
-    var TechnologiesView = GenericView.extend({
-        el: '#technologies',
-        template: $('#tTechnologies').html()
-    });
-
-    var TestimonialsView = GenericView.extend({
-        el: '#testimonials',
-        template: $('#tTestimonials').html()
-    });
-
     var FooterView = GenericView.extend({
         el: '#footer',
         template: $('#tFooter').html()
@@ -104,6 +94,13 @@ $(function(){
         el: '#contact',
         template: $('#tContact').html(),
         emailRegEx: /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i,
+        render: function(model){
+            var _this = GenericView.prototype.render.call(this, model);
+            $('#submit').button().click(function (event) {
+                return _this.submit(event);
+            });
+            return _this;
+        },
         validate: function()
         {
             if(_.isEmpty($('#name').val()))
@@ -189,8 +186,6 @@ $(function(){
             new AboutView().render();
             new PortfolioView().render();
             new PortFolioModelsView().render();
-            new TechnologiesView().render();
-            new TestimonialsView().render();
             new ContactMeView().render();
             new FooterView().render();
         }

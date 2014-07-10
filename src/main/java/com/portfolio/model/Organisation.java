@@ -13,6 +13,15 @@ public class Organisation {
     private List<Project> projects = new ArrayList<Project>();
     private Location location;
     private String designation;
+    private String logo;
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
 
     public Organisation() {
     }

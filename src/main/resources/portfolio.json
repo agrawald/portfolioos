@@ -31,9 +31,11 @@
         },
         "email": "agrawal.dheeraj.7@gmail.com",
         "skill": "Java / J2EE Software Developer"
-    }, "organisations": [
+    },
+    "organisations": [
     {
         "name": "Victoria University",
+        "logo":"img/portfolio/vicuni.png",
         "location": {
             "state": "",
             "country": "",
@@ -463,6 +465,7 @@
     },
     {
         "name": "Blueflag Pvt. Ltd.",
+        "logo":"img/portfolio/bigdatr.png",
         "location": {
             "state": "",
             "country": "",
@@ -637,6 +640,7 @@
     },
     {
         "name": "Dialog IT",
+        "logo":"img/portfolio/dialog.png",
         "location": {
             "state": "",
             "country": "",
@@ -1074,6 +1078,7 @@
     },
     {
         "name": "Sabre Travel Technologies",
+        "logo":"img/portfolio/sabre.png",
         "location": {
             "state": "",
             "country": "",
@@ -1248,6 +1253,7 @@
     },
     {
         "name": "Manhattan Associates",
+        "logo":"img/portfolio/manh.png",
         "location": {
             "state": "",
             "country": "",
@@ -1422,6 +1428,7 @@
     },
     {
         "name": "Tech Mahindra Limited",
+        "logo":"img/portfolio/techm.png",
         "location": {
             "state": "",
             "country": "",
@@ -1556,6 +1563,7 @@
     },
     {
         "name": "CSC Private Ltd",
+        "logo":"img/portfolio/csc.png",
         "location": {
             "state": "",
             "country": "",
@@ -1715,6 +1723,7 @@
     },
     {
         "name": "Syntel Private Ltd",
+        "logo":"img/portfolio/syntel.png",
         "location": {
             "state": "",
             "country": "",
@@ -1806,7 +1815,8 @@
             }
         ]
     }
-], "allTechnologies": [
+],
+    "allTechnologies": [
     {
         "name": "GWT 2.4",
         "experience": "0"
@@ -2287,7 +2297,8 @@
         "name": "SVN",
         "experience": "0"
     }
-], "allTestimonials": [
+],
+    "allTestimonials": [
     {
         "description": "",
         "company": "",
@@ -2301,7 +2312,8 @@
 ],
     "personalProjects": [
         {
-            "name": "Android Anti-theft Mobile Application with Social media integration",
+            "name": "Anti-theft Android Mobile Application",
+            "logo":"img/portfolio/antitheft.png",
             "description": "A generic android application designed to track a mobile when the user is not able to locate it in his/her vicinity. The application is integrated with the social media sites such as Facebook, twitter etc. using mobile internet, in order to track the device location when in contingency. The application will post device location on these social media. Also if the internet is not available the application will send our messages to the alternate number configured by the user. Once the user configured the application it will run as a background process to broadcast the device location on social media sites.",
             "role": "",
             "responsibilities": ["Following the Agile development methodology to design and develop the application.", "Owner of the conception, design and development of the application.", "Also following project management practices for planning and to achieve the milestones."],
@@ -2312,7 +2324,7 @@
                     "givenBy": ""
                 }
             ],
-            "client": "",
+            "client": "Self",
             "technologies": [
                 {
                     "name": "Java/J2EE",
@@ -2350,6 +2362,7 @@
         },
         {
             "name": "Hack-a-thon – Roaming Gnome",
+            "logo":"img/portfolio/gnome.png",
             "description": "This application was built in 3 days for the organization level event called as Hack-a-thon. The application was an android based mobile application for assisting the Cruise customer by updating them about the events happening on the Cruise enjoying their vacation. The application gets periodic event information feeds (XML) from the 3rd party service called Aker. Then using the android calendar support the application will update the event schedule hence informing user about the things and events going on different parts of the Cruise.",
             "role": "",
             "responsibilities": ["Requirement gathering, Analysis, Designing and developing the application"],
@@ -2360,7 +2373,7 @@
                     "givenBy": ""
                 }
             ],
-            "client": "",
+            "client": "Sabre Holdings",
             "technologies": [
                 {
                     "name": "Java/J2EE",
@@ -2398,6 +2411,7 @@
         },
         {
             "name": "Portfolio (this.website)",
+            "logo":"img/portfolio/thisportfolio.png",
             "description": "The web application which gives a brief introduction about my 8+ years of software development career.",
             "role": "",
             "responsibilities": ["Requirement gathering, Analysis, Designing and developing the application"],
@@ -2408,7 +2422,7 @@
                     "givenBy": ""
                 }
             ],
-            "client": "",
+            "client": "Self",
             "technologies": [
                 {
                     "name": "Spring RESTful Web Service",

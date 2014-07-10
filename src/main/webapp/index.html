@@ -98,7 +98,29 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="{{name}}">
+                        <img src="{{logo}}" class="img-responsive" alt="{{name}}">
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Personal Projects</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                {{#each personalProjects}}
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#{{idOf name}}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{logo}}" class="img-responsive" alt="{{name}}">
                     </a>
                 </div>
                 {{/each}}
@@ -129,44 +151,46 @@
 </section>
 
 <section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Contact Me</h2>
-                <hr class="star-primary">
+    <script id="tContact" type="text/template">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form role="form">
+                        <div class="row">
+                            <div class="form-group col-xs-12 floating-label-form-group">
+                                <label for="name">Name</label>
+                                <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-xs-12 floating-label-form-group">
+                                <label for="email">Email Address</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-xs-12 floating-label-form-group">
+                                <label for="message">Message</label>
+                                <textarea placeholder="Message" id="message" class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" id="submit" class="btn btn-lg btn-success">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <form role="form">
-                    <div class="row">
-                        <div class="form-group col-xs-12 floating-label-form-group">
-                            <label for="name">Name</label>
-                            <input class="form-control" type="text" name="name" placeholder="Name">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-xs-12 floating-label-form-group">
-                            <label for="email">Email Address</label>
-                            <input class="form-control" type="email" name="email" placeholder="Email Address">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-xs-12 floating-label-form-group">
-                            <label for="message">Message</label>
-                            <textarea placeholder="Message" class="form-control" rows="5"></textarea>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-lg btn-success">Send</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+    </script>
 </section>
 
 <footer class="text-center" id="footer">
@@ -231,11 +255,12 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>{{name}}</h2>
-                            <h4>{{startDt}} - {{endDt}}</h4>
+                            <h4>{{designation}} ({{startDt}} - {{endDt}})</h4>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <img src="{{logo}}" class="img-responsive img-centered" alt="">
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
+                    </div>
                     </div>
                 </div>
                 {{#each projects}}
@@ -243,7 +268,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>{{name}}</h2>
-                            <hr class="star-light">
+                            <hr class="star-primary">
                             <p>{{description}}</p>
                             <ul class="list-inline item-details">
                                 <li>Client: <strong><a href="#">{{client}}</a></strong>
@@ -262,8 +287,47 @@
         </div>
     </div>
     {{/each}}
+    {{#each personalProjects}}
+    <div class="portfolio-modal modal fade" id="{{idOf name}}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{name}}</h2>
+                            <hr class="star-primary">
+                            <img src="{{logo}}" class="img-responsive img-centered" alt="">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <p>{{description}}</p>
+                        <ul class="list-inline item-details">
+                            <li>Client: <strong><a href="#">{{client}}</a></strong>
+                            </li>
+                        </ul>
+                        <p>Responsibilities: {{#list responsibilities}}{{/list}}</p>
+                        <p>Technologies: {{#tech technologies}} {{name}} {{/tech}}</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
     </script>
 </div>
+
 
 <script src="js/common/jquery-1.10.2.js"></script>
 <script src="js/common/bootstrap.min.js"></script>

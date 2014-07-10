@@ -17,6 +17,15 @@ public class Project {
     private List<String> responsibilities = new ArrayList<String>();
     private List<Testimonial> testimonials = new ArrayList<Testimonial>();
     private Set<Technology> technologies = new HashSet<Technology>();
+    private String logo;
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
 
     public Project() {
     }
