@@ -42,6 +42,12 @@
         <webroots>
           <root url="file://$MODULE_DIR$/.openshift/config" relative="/WEB-INF" />
         </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/test/java" />
+        </sourceRoots>
       </configuration>
     </facet>
     <facet type="web" name="Web3">
@@ -52,6 +58,12 @@
         <webroots>
           <root url="file://$MODULE_DIR$/.openshift/cron/weekly" relative="/WEB-INF" />
         </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/test/java" />
+        </sourceRoots>
       </configuration>
     </facet>
   </component>
