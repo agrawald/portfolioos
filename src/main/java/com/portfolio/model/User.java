@@ -14,6 +14,8 @@ public class User {
     private Contact contact;
     private String email;
     private String skill;
+    private String facebookUrl;
+    private String googlePlusUrl;
 
     @Override
     public String toString() {
@@ -26,6 +28,8 @@ public class User {
         sb.append(", contact=").append(contact);
         sb.append(", email='").append(email).append('\'');
         sb.append(", linkedInUrl='").append(linkedInUrl).append('\'');
+        sb.append(", facebookUrl='").append(facebookUrl).append('\'');
+        sb.append(", googlePlusUrl='").append(googlePlusUrl).append('\'');
         sb.append(", about='").append(about).append('\'');
         sb.append(", skill='").append(skill).append('\'');
         sb.append('}');
