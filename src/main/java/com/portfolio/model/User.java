@@ -17,6 +17,22 @@ public class User {
     private String facebookUrl;
     private String googlePlusUrl;
 
+    public String getFacebookUrl() {
+        return facebookUrl;
+    }
+
+    public void setFacebookUrl(String facebookUrl) {
+        this.facebookUrl = facebookUrl;
+    }
+
+    public String getGooglePlusUrl() {
+        return googlePlusUrl;
+    }
+
+    public void setGooglePlusUrl(String googlePlusUrl) {
+        this.googlePlusUrl = googlePlusUrl;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("User{");

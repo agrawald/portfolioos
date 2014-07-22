@@ -20,9 +20,6 @@ $(function(){
         model: Portfolio,
         url:function(){
             return '/api/portfolio/' + this.userId;
-        },
-        getEnabled:function(){
-            return this.where({enabled: true});
         }
     });
 
@@ -32,74 +29,48 @@ $(function(){
 
     var GenericView = Backbone.View.extend({
         collections: new PortfolioCollection(),
+        model: null,
+        emailRegEx: /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i,
+        el_templates: {'#tNavigation': '#navigation',
+            '#tHeader':'#header',
+            '#tPortfolio': '#portfolio',
+            '#tPortFolioModels': '#portFolioModels',
+            '#tAbout': '#about',
+            '#tFooter': '#footer',
+            '#tContact': '#contact'},
         initialize: function(){
-            var _this = this;
-            this.collections.fetch({
-                success: function(collection){
-                    _this.onSuccessHandler(collection);
-                }
-            });
+            if(_.isNull(this.model) || _.isUndefined(this.model))
+            {
+                var _this = this;
+                this.collections.fetch({
+                    success: function(collection){
+                        _this.onSuccessHandler(collection);
+                    }
+                });
+            }
         },
         onSuccessHandler: function(collection){
             var _this = this;
             _.each(collection.models, function(model){
                 if(model.attributes.enabled)
-                    _this.render(model)
+                {
+                    _this.model = model;
+                    _this.render();
+                }
             })
         },
-        render: function(model){
-            if(!_.isUndefined(model) && !_.isUndefined(this.template))
-            {
-                var hb_template = Handlebars.compile(this.template);
-                var html = hb_template(model.toJSON());
-                this.$el.html(html);
-            }
+        render: function(){
+            var _this = this;
+            _.map(this.el_templates, function(el, key){
+                var hb_template = Handlebars.compile($(key).html());
+                var html = hb_template(_this.model.toJSON());
+                $(el).html(html);
+            });
 
-            return this;
-        }
-    });
-
-    var NavigationView = GenericView.extend({
-        el: '#navigation',
-        template: $('#tNavigation').html()
-    });
-
-    var HeaderView = GenericView.extend({
-        el: '#header',
-        template: $('#tHeader').html()
-    });
-
-    var PortfolioView = GenericView.extend({
-        el:'#portfolio',
-        template: $('#tPortfolio').html()
-    });
-
-    var PortFolioModelsView = GenericView.extend({
-        el:'#portFolioModels',
-        template: $('#tPortFolioModels').html()
-    });
-
-    var AboutView = GenericView.extend({
-        el: '#about',
-        template: $('#tAbout').html()
-    });
-
-    var FooterView = GenericView.extend({
-        el: '#footer',
-        template: $('#tFooter').html()
-    });
-
-
-    var ContactMeView = GenericView.extend({
-        el: '#contact',
-        template: $('#tContact').html(),
-        emailRegEx: /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i,
-        render: function(model){
-            var _this = GenericView.prototype.render.call(this, model);
             $('#submit').button().click(function (event) {
                 return _this.submit(event);
             });
-            return _this;
+            return this;
         },
         validate: function()
         {
@@ -140,20 +111,20 @@ $(function(){
             if(this.validate())
             {
                 contact.save({
-                    name: $('#name').val(),
-                    email: $('#email').val(),
-                    contact: $('#contact').val(),
-                    message: $('#message').val(),
-                    userId: $('#userId').val()
-                },
-                {
-                    error: function(model, response){
-                        return new DialogView().render(response);
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        contact: $('#contact').val(),
+                        message: $('#message').val(),
+                        userId: $('#userId').val()
                     },
-                    success:function(model, response){
-                        return new DialogView().render(response);
-                    }
-                });
+                    {
+                        error: function(model, response){
+                            //return new DialogView().render(response);
+                        },
+                        success:function(model, response){
+                            //return new DialogView().render(response);
+                        }
+                    });
             }
         }
     });
@@ -164,7 +135,6 @@ $(function(){
         render: function(model){
             if(!_.isUndefined(model))
             {
-                console.log("In render" + model);
                 var hb_template = Handlebars.compile(this.template);
                 var html = hb_template(model);
                 this.$el.html(html);
@@ -181,13 +151,7 @@ $(function(){
             '': 'header'
         },
         initialize: function(){
-            new NavigationView().render();
-            new HeaderView().render();
-            new AboutView().render();
-            new PortfolioView().render();
-            new PortFolioModelsView().render();
-            new ContactMeView().render();
-            new FooterView().render();
+            new GenericView();
         }
     });
 
