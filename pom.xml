@@ -1,12 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>portfolioos</groupId>
-	<artifactId>portfolioos</artifactId>
+	<groupId>cv</groupId>
+	<artifactId>cv</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
-	<name>portfolioos</name>
-	
+	<name>cv</name>
 	<repositories>
 		<repository>
 			<id>eap</id>
@@ -36,7 +35,7 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<properties>
-		<spring.version>4.0.5.RELEASE</spring.version>
+		<spring.version>4.0.5.RELEASE</spring.version>		
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
@@ -250,7 +249,7 @@
 			<!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
 			<id>openshift</id>
 			<build>
-				<finalName>portfolioos</finalName>
+				<finalName>cv</finalName>
 				<plugins>
 					<plugin>
 						<artifactId>maven-war-plugin</artifactId>
@@ -260,6 +259,33 @@
 							<warName>ROOT</warName>
 						</configuration>
 					</plugin>
+					<plugin>
+                        <groupId>com.samaxes.maven</groupId>
+                        <artifactId>minify-maven-plugin</artifactId>
+                        <version>1.7.2</version>
+                        <executions>
+                            <execution>
+                                <id>default-minify</id>
+                                <configuration>
+                                    <cssSourceDir>css</cssSourceDir>
+                                    <cssSourceFiles>
+                                        <cssSourceFile>**/*.css</cssSourceFile>
+                                    </cssSourceFiles>
+                                    <jsSourceDir>js</jsSourceDir>
+                                    <jsSourceFiles>
+                                        <jsSourceFile>**/*.js</jsSourceFile>
+                                    </jsSourceFiles>
+                                    <jsExcludes>
+                                        <exclude>**/*.min.js</exclude>
+                                    </jsExcludes>
+                                </configuration>
+                                <goals>
+                                    <goal>minify</goal>
+                                </goals>
+                                <phase>prepare-package</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
 				</plugins>
 			</build>
 		</profile>

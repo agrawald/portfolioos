@@ -9,6 +9,7 @@ import java.util.Set;
  * Created by e7006722 on 25/02/14.
  */
 public class Project {
+    private String id;
     private String name;
     private String client;
     private String role;
@@ -16,10 +17,26 @@ public class Project {
     private List<String> responsibilities = new ArrayList<String>();
     private List<Testimonial> testimonials = new ArrayList<Testimonial>();
     private Set<Technology> technologies = new HashSet<Technology>();
+    private String logo;
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
 
     public Project() {
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getClient() {
         return client;

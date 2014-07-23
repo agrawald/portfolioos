@@ -1,4 +1,7 @@
-{"id": "532649889bf18936eeef6106", "enabled": true, "about": null,
+{
+    "id": "532649889bf18936eeef6106",
+    "enabled": true,
+    "about": "Portfolio is a web application created using <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>, <a href='http://backbonejs.org/' target='_blank'>Backbone</a>, <a href='http://spring.io/' target='_blank'>Spring</a>, <a href='https://www.openshift.com/' target='_blank'>MongoDB</a> and hosted on <a href='https://www.openshift.com/' target='_blank'>OpenShift Online</a>.",
     "user": {
         "address": {
             "type": "Avenue",
@@ -6,22 +9,33 @@
             "zipcode": 3183,
             "unit": "5",
             "road": "Loch",
-            "plot": "20"
+            "plot": "20",
+            "state": "VIC"
         },
         "linkedInUrl": "https://au.linkedin.com/in/dheerajagrawal/",
+        "facebookUrl": "http://facebook.com/gmat.dheeraj",
+        "googlePlusUrl": "http://google.com/+DheerajAgrawal7",
         "password": "someencryptedpassword",
         "firstName": "Dheeraj",
         "lastName": "Agrawal",
-        "about": "An ingenious, productive and team-oriented individual with 8+ years of international experience in product/software architecture design and development.\n\nExperienced working in Scrum, Agile, ITIL and Test driven development (TDD) methodologies around technologies and frame works such as J2EE, Spring. Hibernate, GWT, Struts, Oracle and MS SQL Server in domain areas of Product Life-ycle Management (PLM), Life Insurance Underwriting, Project Management, Telecom, Supply Chain Management (SCM) and Travel industry.\nExcellent communication skills, dependable, proactive, flexible personality with a character for innovative and cost effective problem solving skills and capable of working well in team as well as individual contributor.\n\nFast learner, sagacious and inquisitive to learn new technologies.\n\nHighly skilled and capable software professional with spacious skills in software analysis, design, and development.\n\nAbility to bridge gap between technical and business teams to ensure efficiency while developing and delivery of product/software.",
+        "about": ["An ingenious, productive and team-oriented individual with 8+ years of international experience in product/software architecture design and development."
+            ,"Experienced working in Scrum, Agile, ITIL and Test driven development (TDD) methodologies around technologies and frame works such as J2EE, Spring. Hibernate, GWT, Struts, Oracle and MS SQL Server in domain areas of Product Life-ycle Management (PLM), Life Insurance Underwriting, Project Management, Telecom, Supply Chain Management (SCM) and Travel industry."
+            ,"Excellent communication skills, dependable, proactive, flexible personality with a character for innovative and cost effective problem solving skills and capable of working well in team as well as individual contributor."
+            ,"Fast learner, sagacious and inquisitive to learn new technologies."
+            ,"Highly skilled and capable software professional with spacious skills in software analysis, design, and development."
+            ,"Ability to bridge gap between technical and business teams to ensure efficiency while developing and delivery of product/software."],
         "userId": "dagrawal",
         "contact": {
             "phone": null,
             "mobile": "+61470020152"
         },
-        "email": "agrawal.dheeraj.7@gmail.com"
-    }, "organisations": [
+        "email": "agrawal.dheeraj.7@gmail.com",
+        "skill": "Java / J2EE Software Developer"
+    },
+    "organisations": [
     {
         "name": "Victoria University",
+        "logo":"img/portfolio/vicuni.png",
         "location": {
             "state": "",
             "country": "",
@@ -31,6 +45,82 @@
         "startDt": "09/2013",
         "endDt": "Present",
         "projects": [
+            {
+                "name": "D2l Echo Integration",
+                "description": "Exposing REST API’s to synchronize the recording data between D2L and Echo 360 thus making the lecture recordings available in the D2L and VUC portal.",
+                "role": "Senior Software Developer",
+                "responsibilities": ["Analysis and designing a solution based on the requirement give by business.", "Developing, integrating, testing and deploying the solution on the existing architecture.", "Coordinating and supporting with the QA and UAT team for a bug free delivery"],
+                "testimonials": [
+                    {
+                        "description": "",
+                        "company": "",
+                        "givenBy": ""
+                    }
+                ],
+                "client": "eAdmission",
+                "technologies": [
+                    {
+                        "name": "Java 7",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "XML",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "XSLT",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "XSD",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "Shell Scripting",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "Junit",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "Hibernate 4",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "Vert.x",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "Mockito",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "PowerMockito",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "Quartz Job Scheduler",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "Ant",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "RESTful Web Service",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "Apache Tomcat 7",
+                        "experience": "0"
+                    },
+                    {
+                        "name": "SCRUM Agile",
+                        "experience": "0"
+                    }
+                ]
+            },
             {
                 "name": "Reconciliation",
                 "description": "A middle tier functionality to synchronize the student enrollment between Callista and Desire2Learn application.",
@@ -451,6 +541,7 @@
     },
     {
         "name": "Blueflag Pvt. Ltd.",
+        "logo":"img/portfolio/bigdatr.png",
         "location": {
             "state": "",
             "country": "",
@@ -625,6 +716,7 @@
     },
     {
         "name": "Dialog IT",
+        "logo":"img/portfolio/dialog.png",
         "location": {
             "state": "",
             "country": "",
@@ -1062,6 +1154,7 @@
     },
     {
         "name": "Sabre Travel Technologies",
+        "logo":"img/portfolio/sabre.png",
         "location": {
             "state": "",
             "country": "",
@@ -1236,6 +1329,7 @@
     },
     {
         "name": "Manhattan Associates",
+        "logo":"img/portfolio/manh.png",
         "location": {
             "state": "",
             "country": "",
@@ -1410,6 +1504,7 @@
     },
     {
         "name": "Tech Mahindra Limited",
+        "logo":"img/portfolio/techm.png",
         "location": {
             "state": "",
             "country": "",
@@ -1544,6 +1639,7 @@
     },
     {
         "name": "CSC Private Ltd",
+        "logo":"img/portfolio/csc.png",
         "location": {
             "state": "",
             "country": "",
@@ -1703,6 +1799,7 @@
     },
     {
         "name": "Syntel Private Ltd",
+        "logo":"img/portfolio/syntel.png",
         "location": {
             "state": "",
             "country": "",
@@ -1794,7 +1891,8 @@
             }
         ]
     }
-], "allTechnologies": [
+],
+    "allTechnologies": [
     {
         "name": "GWT 2.4",
         "experience": "0"
@@ -2275,7 +2373,8 @@
         "name": "SVN",
         "experience": "0"
     }
-], "allTestimonials": [
+],
+    "allTestimonials": [
     {
         "description": "",
         "company": "",
@@ -2289,7 +2388,8 @@
 ],
     "personalProjects": [
         {
-            "name": "Android Anti-theft Mobile Application with Social media integration",
+            "name": "Anti-theft Android Mobile Application",
+            "logo":"img/portfolio/antitheft.png",
             "description": "A generic android application designed to track a mobile when the user is not able to locate it in his/her vicinity. The application is integrated with the social media sites such as Facebook, twitter etc. using mobile internet, in order to track the device location when in contingency. The application will post device location on these social media. Also if the internet is not available the application will send our messages to the alternate number configured by the user. Once the user configured the application it will run as a background process to broadcast the device location on social media sites.",
             "role": "",
             "responsibilities": ["Following the Agile development methodology to design and develop the application.", "Owner of the conception, design and development of the application.", "Also following project management practices for planning and to achieve the milestones."],
@@ -2300,7 +2400,7 @@
                     "givenBy": ""
                 }
             ],
-            "client": "",
+            "client": "Self",
             "technologies": [
                 {
                     "name": "Java/J2EE",
@@ -2338,6 +2438,7 @@
         },
         {
             "name": "Hack-a-thon – Roaming Gnome",
+            "logo":"img/portfolio/gnome.png",
             "description": "This application was built in 3 days for the organization level event called as Hack-a-thon. The application was an android based mobile application for assisting the Cruise customer by updating them about the events happening on the Cruise enjoying their vacation. The application gets periodic event information feeds (XML) from the 3rd party service called Aker. Then using the android calendar support the application will update the event schedule hence informing user about the things and events going on different parts of the Cruise.",
             "role": "",
             "responsibilities": ["Requirement gathering, Analysis, Designing and developing the application"],
@@ -2348,7 +2449,7 @@
                     "givenBy": ""
                 }
             ],
-            "client": "",
+            "client": "Sabre Holdings",
             "technologies": [
                 {
                     "name": "Java/J2EE",
@@ -2386,6 +2487,7 @@
         },
         {
             "name": "Portfolio (this.website)",
+            "logo":"img/portfolio/thisportfolio.png",
             "description": "The web application which gives a brief introduction about my 8+ years of software development career.",
             "role": "",
             "responsibilities": ["Requirement gathering, Analysis, Designing and developing the application"],
@@ -2396,7 +2498,7 @@
                     "givenBy": ""
                 }
             ],
-            "client": "",
+            "client": "Self",
             "technologies": [
                 {
                     "name": "Spring RESTful Web Service",

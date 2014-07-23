@@ -1,207 +1,362 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+<html lang="en"><head>
 
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/jquery-ui.js"></script>
-    <script src="scripts/json.js"></script>
-    <script src="scripts/underscore.js"></script>
-    <script src="scripts/handlebars.js"></script>
-    <script src="scripts/backbone.js"></script>
-    <script src="scripts/helper.js"></script>
-    <script src="scripts/portfolio.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Portfolio, Dheeraj, agrawal, Dheeraj Agrawal, dagrawal, resume, cv">
+    <meta name="author" content="Dheeraj Agrawal">
 
+    <title>Dheeraj Agrawal - Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/freelancer.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+    <script id="tNavigation" type="text/template">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </script>
+</nav>
+
+<header id="header">
     <script id="tHeader" type="text/template">
-        <table class="left">
-            <tr>
-                <td class="wider left">
-                    <h2>{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</h2>
-                </td>
-                <!--<td class="right">-->
-                    <!--{{#contact user.contact}}-->
-                    <!--M:{{mobile}}&nbsp;H:{{phone}}-->
-                    <!--{{/contact}}-->
-                <!--</td>-->
-                <td class="right">
-                    <div id="radioset" class="ui-buttonset">
-                    <button id="linkedInUrl"
-                            class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only"
-                            role="button"
-                            aria-disabled="false"
-                            title="Let's Linked In">
-                        <span class="ui-button-text">
-                            <a href="{{user.linkedInUrl}}" class="link" target="_blank"><img src="ico/linkedin.png"></a>
-                        </span>
-                    </button>
-                    <button id="download"
-                            class="ui-button ui-widget ui-state-default ui-corner-right ui-button-text-only"
-                            role="button"
-                            aria-disabled="false"
-                            title="Download CV">
-                        <span class="ui-button-text">
-                            <a href="/api/download/{{user.userId}}" class="link" target="_self"><img src="ico/go_down.png"></a>
-                        </span>
-                    </button>
-                    </div>
-                </td>
-            </tr>
-
-        </table>
-    </script>
-    <script id="tAbout" type="text/template">
-        <h2>About me...</h2>
-        <span class="about">{{escape user.about}}</span>
-    </script>
-    <script id="tPortfolio" type="text/template">
-        <h2>Portfolio</h2>
-        <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
-            {{#tabs organisations}}
-                <p>{{designation}} - ({{startDt}}-{{endDt}})</p>
-                {{#list projects}}
-                <div>
-                    <h3>{{name}} - {{role}} - {{client}}</h3>
-                    <p>{{description}}</p>
-                    <div>
-                        <h4>Responsibilities</h4>
-                        {{#list responsibilities}}{{/list}}
-                    </div>
-                    <div>
-                        <h4>Technologies</h4>
-                        <div>{{#technology technologies}} {{name}} {{/technology}}</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}">
+                    <div class="intro-text">
+                        <span class="name">{{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}</span>
+                        <hr class="star-light">
+                        <span class="skills">{{escape user.skill}}</span>
                     </div>
                 </div>
-                {{/list}}
-            {{/tabs}}
+            </div>
         </div>
     </script>
-    <script id="tTechnologies" type="text/template">
-        <h2>Skill Set</h2>
-        {{#technology allTechnologies}}
-            {{name}}
-        {{/technology}}
+</header>
+
+<section id="portfolio">
+    <script id="tPortfolio" type="text/template">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                {{#each organisations}}
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#{{idOf name}}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{logo}}" class="img-responsive" alt="{{name}}">
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Personal Projects</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                {{#each personalProjects}}
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#{{idOf name}}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{logo}}" class="img-responsive" alt="{{name}}">
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
     </script>
-    <script id="tTestimonials" type="text/template">
-        <!--{{#each allTestimonials}}-->
-        <!--<p>"{{description}}"</p>-->
-        <!--<p>{{project}}</p>-->
-        <!--{{/each}}-->
-        <h2>Personal Projects</h2>
-        {{#list personalProjects}}
-        <h3>{{name}}</h3>
-        <p>{{description}}</p>
-        <h4>Responsibilities</h4>
-        {{#list responsibilities}}{{/list}}
-        <h4>Technologies</h4>
-        <div>{{#technology technologies}} {{name}} {{/technology}}</div>
-        {{/list}}
+</section>
+
+<section class="success" id="about">
+    <script id="tAbout" type="text/template">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                {{#about user.about}}{{/about}}
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="/api/download/{{user.userId}}" class="btn btn-lg btn-outline" >
+                        <i class="fa fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
     </script>
-    <script id="tContactMe" type="text/template">
-        <table class="table">
-            <tr>
-                <td colspan="2" class="center"><h2>Contact Me</h2></td>
-            </tr>
-            <tr>
-                <td class="contact">{{contactMe}}</td>
-                <td>
-                    <form id="frmContact">
-                        <input type="hidden" id="userId" value="{{user.userId}}">
-                        <table class="table">
-                            <tr class="row">
-                                <td class="right"><label path="name">Name<span class="required">*</span>&nbsp;</label></td>
-                                <td class="left"><input path="name" id="name" class="ui-corner-all"/></td>
-                            </tr>
-                            <tr class="row">
-                                <td class="right"><label path="email">Email<span class="required">*</span>&nbsp;</label></td>
-                                <td class="left"><input path="email" id="email" class="ui-corner-all"/></td>
-                            </tr>
-                            <tr class="row">
-                                <td class="right"><label path="contact">Telephone</label>&nbsp;</td>
-                                <td class="left"><input path="contact" id="contact" class="ui-corner-all"/></td>
-                            </tr>
-                            <tr class="row">
-                                <td class="right" style="vertical-align: top"><label path="message">Message</label>&nbsp;</td>
-                                <td class="left"><textarea path="message" id="message" class="ui-corner-all" style="margin: 2px; height: 174px; width: 387px;"></textarea></td>
-                            </tr>
-                            <tr class="row">
-                                <td class="right" colspan="2">
-                                    <button class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only"
-                                            role="button"
-                                            aria-disabled="false" type="reset">
-                                        <span class="ui-button-text">Clear</a></span>
-                                    </button>
-                                    <button id="submit"
-                                            class="ui-button ui-widget ui-state-default ui-corner-right ui-button-text-only"
-                                            role="button"
-                                            aria-disabled="false" type="submit">
-                                        <span class="ui-button-text">Submit</a></span>
-                                    </button>
-                                </td>
-                            </tr>
-                        </table>
+</section>
+
+<section id="contact">
+    <script id="tContact" type="text/template">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form name="sentMessage" id="contactForm" novalidate="" class="">
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name." aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address." aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required="" data-validation-required-message="Please enter your phone number." aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
                     </form>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
     </script>
-    <script id="tDialog" type="text/template">
-        <p>{{escape message}}</p>
+</section>
+
+<footer class="text-center" id="footer">
+    <script id="tFooter" type="text/template">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>{{{address user.address}}}</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li><a href="{{escape user.facebookUrl}}" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li><a href="{{escape user.googlePlusUrl}}" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="{{escape user.linkedInUrl}}" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Portfolio</h3>
+                        {{{this.about}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright © 2014 - {{#fullName user}} {{firstName}} {{lastName}} {{/fullName}}
+                    </div>
+                </div>
+            </div>
+        </div>
     </script>
-</head>
-<body class="center">
-<div class="wrapper center">
-    <table class="left">
-        <tr>
-            <td><div id="header" class="title"></div></td>
-            <td><div id="radioset" class="ui-buttonset">
-                <input type="radio" id="rb-about" name="radio" checked="checked" class="ui-helper-hidden-accessible"
-                       value="about">
-                <label for="rb-about"
-                       class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left"
-                       role="button" aria-disabled="false" title="About me">
-                    <span class="ui-button-text"><img src="ico/message_information.png"></span>
-                </label>
+</footer>
 
-                <input type="radio" id="rb-portfolio" name="radio" class="ui-helper-hidden-accessible">
-                <label for="rb-portfolio" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button"
-                       aria-disabled="false"  title="My Portfolio">
-                    <span class="ui-button-text"><img src="ico/portfolio.png"></span>
-                </label>
-
-                <input type="radio" id="rb-technologies" name="radio" class="ui-helper-hidden-accessible">
-                <label for="rb-technologies" class="ui-button ui-widget ui-state-default ui-button-text-only"
-                       role="button"
-                       aria-disabled="false"  title="Skills">
-                    <span class="ui-button-text"><img src="ico/high_technology_idisk.png"></span>
-                </label>
-
-                <input type="radio" id="rb-testimonials" name="radio" class="ui-helper-hidden-accessible">
-                <label for="rb-testimonials" class="ui-button ui-widget ui-state-default ui-button-text-only"
-                       role="button"
-                       aria-disabled="false" title="Personal Projects">
-                    <span class="ui-button-text"><img src="ico/thumbs_up.png"></span>
-                </label>
-
-                <input type="radio" id="rb-contact-me" name="radio" class="ui-helper-hidden-accessible">
-                <label for="rb-contact-me"
-                       class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right"
-                       role="button" aria-disabled="false"  title="Contact Me">
-                    <span class="ui-button-text"><img src="ico/contact.png"></span>
-                </label>
-
-            </div></td>
-        </tr>
-    </table>
-    <div class="left">
-        <div id="about"></div>
-        <div id="portfolio"></div>
-        <div id="technologies"></div>
-        <div id="testimonials"></div>
-        <div id="contactMe" class="center"></div>
-    </div>
-    <div id="dialog" title="Message"></div>
+<div class="scroll-top page-scroll visible-xs visble-sm">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
 </div>
 
-</body>
-</html>
+<!-- Portfolio Modals -->
+<div id="portFolioModels">
+    <script id="tPortFolioModels" type="text/template">
+    {{#each organisations}}
+    <div class="portfolio-modal modal fade" id="{{idOf name}}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{name}}</h2>
+                            <h4>{{designation}} ({{startDt}} - {{endDt}})</h4>
+                            <hr class="star-primary">
+                            <img src="{{logo}}" class="img-responsive img-centered" alt="">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {{#each projects}}
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{name}}</h2>
+                            <hr class="star-primary">
+                            <p>{{description}}</p>
+                            <ul class="list-inline item-details">
+                                <li>Client: <strong><a href="#">{{client}}</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="#">{{role}}</a></strong>
+                                </li>
+                            </ul>
+                            <p>Responsibilities: {{#list responsibilities}}{{/list}}</p>
+                            <p>Technologies: {{#tech technologies}} {{name}} {{/tech}}</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    {{#each personalProjects}}
+    <div class="portfolio-modal modal fade" id="{{idOf name}}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{name}}</h2>
+                            <hr class="star-primary">
+                            <img src="{{logo}}" class="img-responsive img-centered" alt="">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <p>{{description}}</p>
+                        <ul class="list-inline item-details">
+                            <li>Client: <strong><a href="#">{{client}}</a></strong>
+                            </li>
+                        </ul>
+                        <p>Responsibilities: {{#list responsibilities}}{{/list}}</p>
+                        <p>Technologies: {{#tech technologies}} {{name}} {{/tech}}</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    </script>
+</div>
+
+
+<script src="js/common/jquery-1.10.2.js"></script>
+<script src="js/common/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/common/classie.js"></script>
+<script src="js/common/cbpAnimatedHeader.min.js"></script>
+
+<script src="js/common/json.js"></script>
+
+<script src="js/common/underscore.min.js"></script>
+<script src="js/common/handlebars.js"></script>
+<script src="js/common/backbone.min.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/portfolio.js"></script>
+<!-- Contact Form JavaScript -->
+<script src="js/common/jqBootstrapValidation.js"></script>
+
+
+</body></html>

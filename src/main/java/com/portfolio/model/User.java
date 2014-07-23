@@ -1,5 +1,7 @@
 package com.portfolio.model;
 
+import java.util.List;
+
 /**
  * Created by e7006722 on 25/02/14.
  */
@@ -11,6 +13,25 @@ public class User {
     private Address address;
     private Contact contact;
     private String email;
+    private String skill;
+    private String facebookUrl;
+    private String googlePlusUrl;
+
+    public String getFacebookUrl() {
+        return facebookUrl;
+    }
+
+    public void setFacebookUrl(String facebookUrl) {
+        this.facebookUrl = facebookUrl;
+    }
+
+    public String getGooglePlusUrl() {
+        return googlePlusUrl;
+    }
+
+    public void setGooglePlusUrl(String googlePlusUrl) {
+        this.googlePlusUrl = googlePlusUrl;
+    }
 
     @Override
     public String toString() {
@@ -23,9 +44,20 @@ public class User {
         sb.append(", contact=").append(contact);
         sb.append(", email='").append(email).append('\'');
         sb.append(", linkedInUrl='").append(linkedInUrl).append('\'');
+        sb.append(", facebookUrl='").append(facebookUrl).append('\'');
+        sb.append(", googlePlusUrl='").append(googlePlusUrl).append('\'');
         sb.append(", about='").append(about).append('\'');
+        sb.append(", skill='").append(skill).append('\'');
         sb.append('}');
         return sb.toString();
+    }
+
+    public String getSkill() {
+        return skill;
+    }
+
+    public void setSkill(String skill) {
+        this.skill = skill;
     }
 
     public String getEmail() {
@@ -56,13 +88,13 @@ public class User {
     }
 
     private String linkedInUrl;
-    private String about;
+    private List<String> about;
 
-    public String getAbout() {
+    public List<String> getAbout() {
         return about;
     }
 
-    public void setAbout(String about) {
+    public void setAbout(List<String> about) {
         this.about = about;
     }
 
