@@ -1,2541 +1,2312 @@
 {
-    "id": "532649889bf18936eeef6106",
-    "enabled": true,
-    "about": "Portfolio is a web application created using <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>, <a href='http://backbonejs.org/' target='_blank'>Backbone</a>, <a href='http://spring.io/' target='_blank'>Spring</a>, <a href='https://www.openshift.com/' target='_blank'>MongoDB</a> and hosted on <a href='https://www.openshift.com/' target='_blank'>OpenShift Online</a>.",
-    "user": {
-        "address": {
-            "type": "Avenue",
-            "suburb": "St Kilda East",
-            "zipcode": 3183,
-            "unit": "5",
-            "road": "Loch",
-            "plot": "20",
-            "state": "VIC"
-        },
-        "linkedInUrl": "https://au.linkedin.com/in/dheerajagrawal/",
-        "facebookUrl": "http://facebook.com/gmat.dheeraj",
-        "googlePlusUrl": "http://google.com/+DheerajAgrawal7",
-        "password": "someencryptedpassword",
-        "firstName": "Dheeraj",
-        "lastName": "Agrawal",
-        "about": ["An ingenious, productive and team-oriented individual with 8+ years of international experience in product/software architecture design and development."
-            ,"Experienced working in Scrum, Agile, ITIL and Test driven development (TDD) methodologies around technologies and frame works such as J2EE, Spring. Hibernate, GWT, Struts, Oracle and MS SQL Server in domain areas of Product Life-ycle Management (PLM), Life Insurance Underwriting, Project Management, Telecom, Supply Chain Management (SCM) and Travel industry."
-            ,"Excellent communication skills, dependable, proactive, flexible personality with a character for innovative and cost effective problem solving skills and capable of working well in team as well as individual contributor."
-            ,"Fast learner, sagacious and inquisitive to learn new technologies."
-            ,"Highly skilled and capable software professional with spacious skills in software analysis, design, and development."
-            ,"Ability to bridge gap between technical and business teams to ensure efficiency while developing and delivery of product/software."],
-        "userId": "dagrawal",
-        "contact": {
-            "phone": null,
-            "mobile": "+61470020152"
-        },
-        "email": "agrawal.dheeraj.7@gmail.com",
-        "skill": "Java / J2EE Software Developer"
+  "id": "532649889bf18936eeef6106",
+  "enabled": true,
+  "about": "Portfolio is a web application created using <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>, <a href='http://backbonejs.org/' target='_blank'>Backbone</a>, <a href='http://spring.io/' target='_blank'>Spring</a>, <a href='https://www.openshift.com/' target='_blank'>MongoDB</a> and hosted on <a href='https://www.openshift.com/' target='_blank'>OpenShift Online</a>.",
+  "user": {
+    "address": {
+      "type": "Way",
+      "suburb": "Truganina",
+      "zipcode": 3029,
+      "unit": "",
+      "road": "Galactic",
+      "plot": "12",
+      "state": "VIC"
     },
-    "organisations": [
-    {
-        "name": "Victoria University",
-        "logo":"img/portfolio/vicuni.png",
-        "location": {
-            "state": "",
-            "country": "",
-            "city": ""
-        },
-        "designation": "Senior Software Developer",
-        "startDt": "09/2013",
-        "endDt": "Present",
-        "projects": [
-            {
-                "name": "D2l Echo Integration",
-                "description": "Exposing REST API’s to synchronize the recording data between D2L and Echo 360 thus making the lecture recordings available in the D2L and VUC portal.",
-                "role": "Senior Software Developer",
-                "responsibilities": ["Analysis and designing a solution based on the requirement give by business.", "Developing, integrating, testing and deploying the solution on the existing architecture.", "Coordinating and supporting with the QA and UAT team for a bug free delivery"],
-                "testimonials": [
-                    {
-                        "description": "",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "eAdmission",
-                "technologies": [
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Shell Scripting",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Junit",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate 4",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Vert.x",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "PowerMockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Quartz Job Scheduler",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "RESTful Web Service",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM Agile",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Reconciliation",
-                "description": "A middle tier functionality to synchronize the student enrollment between Callista and Desire2Learn application.",
-                "role": "Senior Software Developer",
-                "responsibilities": ["Analysis and designing a solution based on the requirement give by business.", "Developing, integrating, testing and deploying the solution on the existing architecture.", "Coordinating and supporting with the QA and UAT team for a bug free delivery"],
-                "testimonials": [
-                    {
-                        "description": "",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "eAdmission",
-                "technologies": [
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Shell Scripting",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Junit",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate 4",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Vert.x",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "PowerMockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Quartz Job Scheduler",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "RESTful Web Service",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM Agile",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "ESB REST API and D2L Backend",
-                "description": "Implementing REST service to expose backend functionality of D2L.",
-                "role": "Senior Software Developer",
-                "responsibilities": ["Analysis and designing a solution based on the requirement give by business.", "Developing, integrating, testing and deploying the solution on the existing architecture.", "Coordinating and supporting with the QA and UAT team for a bug free delivery"],
-                "testimonials": [
-                    {
-                        "description": "",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "eAdmission",
-                "technologies": [
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Junit",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate 4",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Vert.x",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "PowerMockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Quartz Job Scheduler",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Linux BASH shell",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "RESTful Web Service",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM Agile",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Active Student Update Job",
-                "description": "An automated solution to update the students status from IDM to RightNow",
-                "role": "Senior Software Developer",
-                "responsibilities": ["Analysis and designing a solution based on the requirement give by business.", "Developing, integrating, testing and deploying the solution on the existing architecture.", "Coordinating and supporting with the QA and UAT team for a bug free delivery"],
-                "testimonials": [
-                    {
-                        "description": "",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "eEnablement",
-                "technologies": [
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Design Patterns",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Junit",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate 4",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MuleESB",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mule Studio",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Vert.x",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "PowerMockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Quartz Job Scheduler",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Linux BASH shell",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM Agile",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Contact Merge and Student Data Load",
-                "description": "Mule ESB solution to merge the duplicate contact information for each student and updating the same to the RightNow application using Web Service calls.",
-                "role": "Senior Software Developer",
-                "responsibilities": ["Analysis and designing a solution based on the requirement give by business.", "Developing, integrating, testing and deploying the solution on the existing architecture.", "Coordinating and supporting with the QA and UAT team for a bug free delivery"],
-                "testimonials": [
-                    {
-                        "description": "",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "eEnablement",
-                "technologies": [
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Design Patterns",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Junit",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate 4",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MuleESB",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mule Studio",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Vert.x",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "PowerMockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Quartz Job Scheduler",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Linux BASH shell",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM Agile",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Callista Transfer Status Update",
-                "description": "An automated solution for updating and viewing an application’s Callista (student management portal) transfer status in an Incident from the RightNow CX console to trigger selection workflow.",
-                "role": "Senior Software Developer",
-                "responsibilities": ["Analysis and designing a solution based on the requirement give by business.", "Developing, integrating, testing and deploying the solution on the existing architecture.", "Coordinating and supporting with the QA and UAT team for a bug free delivery"],
-                "testimonials": [
-                    {
-                        "description": "",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "User Provisioning",
-                "technologies": [
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Design Patterns",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Junit",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate 4",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MuleESB",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mule Studio",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Vert.x",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "PowerMockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Quartz Job Scheduler",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Linux BASH shell",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM Agile",
-                        "experience": "0"
-                    }
-                ]
-            }
-        ]
+    "linkedInUrl": "https://au.linkedin.com/in/dheerajagrawal/",
+    "facebookUrl": "http://facebook.com/gmat.dheeraj",
+    "googlePlusUrl": "http://google.com/+DheerajAgrawal7",
+    "password": "someencryptedpassword",
+    "firstName": "Dheeraj",
+    "lastName": "Agrawal",
+    "about": [
+      "An ingenious and resourceful developer with 12 years of extensive proven experience with working on a wide umbrella of technologies. Have more than 4 years of leadership experience along with stakeholder management and team engagement.",
+      "Most recently working as a Lead Developer in a team of 4 developers, playing as a catalyst in mapping business requirements and organizational direction into software solutions. Liaising with stakeholder and customers in identifying and negotiating requirements. Coordinating with the enterprise architect to identify functional and non-functional requirements, preparing technical designs using latest technology frameworks. ",
+      "Excellent communication skills, dependable, proactive, flexible personality with a character for innovative and cost effective problem solving skills and capable of working well in team as well as individual contributor.",
+      "Fast learner, sagacious and inquisitive to learn new technologies.",
+      "Conducting workshops and training session on latest and greatest technologies being used, thereby up-skilling the team and keeping the workplace up-to-date with the market needs. Engaging team discussions and promote new ideas, thereby taking feedback on solutions to be better and more productive. ",
+      "Making sure quality is delivered in every release with zero bugs and zero downtime. ",
+      "Organizing showcase on the progress and achievements by the project and team members. Contributing to the organization knowledgeable and improving/inventing process to foster happier, productive and healthy development environment.",
+      "Conducting monthly open house developer meet, to contribute new ideas and technologies used in different teams, challenges faced and ways to overcome problems"
+    ],
+    "userId": "dagrawal",
+    "contact": {
+      "phone": null,
+      "mobile": "+61470020152"
     },
-    {
-        "name": "Blueflag Pvt. Ltd.",
-        "logo":"img/portfolio/bigdatr.png",
-        "location": {
-            "state": "",
-            "country": "",
-            "city": ""
-        },
-        "designation": "Senior Software Developer",
-        "startDt": "06/2013",
-        "endDt": "09/2013",
-        "projects": [
-            {
-                "name": "Bigdatr.com.au",
-                "description": "A beautiful data visualization tool that consolidates all your business intelligence in one location. Improve your marketing strategies with targeted media spend and full visibility of your competitors. Creative’s are analyzed by brand, product and campaign, visually, allowing you to quickly identify competitor activity and strategies. Currently working on parallel computing and distributed processing of high volume data.",
-                "role": "Technical Leader",
-                "responsibilities": ["Research, Designing and developing high end Twitter Storm topologies for complex computations", "Research, Designed and developed API and framework for creating multiple instances of Twitter Finagle servers in a protocol independent manner.", "Research, Designing and developing API and framework for managing clusters and load balancing using Zookeeeper.", "Using Junit and Mockito for unit testing the solutions"],
-                "testimonials": [
-                    {
-                        "description": "A very cool testimonial #1",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "A very cool testimonial #2",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Inhouse",
-                "technologies": [
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Design Patterns",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Spring 3.1 (AOP",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MVC",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "DAO",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "RESTful services)",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Storm",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Finagle",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Junit",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Zookeeper",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Mockito",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Redis",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MongoDB",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "AspectJ",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SVG",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "d3.js",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Backbone.js",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Lo-dash.js",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Handlebars.js",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Cobertura",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "RESTful Web Service",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MongoUI",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Maven",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Bamboo",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Git Stash",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "IntelliJ",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Microsoft Visio",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "UML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Jetty",
-                        "experience": "0"
-                    }
-                ]
-            }
-        ]
+    "email": "agrawal.dheeraj.7@gmail.com",
+    "skill": "Full Stack Developer"
+  },
+  "organisations": [{
+    "name": "TABCORP",
+    "logo": "img/portfolio/tab.png",
+    "location": {
+      "state": "VIC",
+      "country": "Australia",
+      "city": "Melbourne"
     },
-    {
-        "name": "Dialog IT",
-        "logo":"img/portfolio/dialog.png",
-        "location": {
-            "state": "",
-            "country": "",
-            "city": ""
-        },
-        "designation": "Software Consultant",
-        "startDt": "01/2013",
-        "endDt": "06/2013",
-        "projects": [
-            {
-                "name": "AWARIS",
-                "description": "The Bureau of Meteorology is Australia's national weather, climate and water agency. Its expertise and services assist Australians in dealing with the harsh realities of their natural environment, including drought, floods, fires, storms, tsunami and tropical cyclones. Through regular forecasts, warnings, monitoring and advice spanning the Australian region and Antarctic territory, the Bureau provides one of the most fundamental and widely used services of government.",
-                "role": "Software Developer",
-                "responsibilities": ["Contributed in the designing and development of new enhancements.", "Creating High-level Design and Low-level design from the requirement gathered."],
-                "testimonials": [
-                    {
-                        "description": "A very cool testimonial #1",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "A very cool testimonial #2",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Bureau of Meteorology",
-                "technologies": [
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Spring 3.1 (AOP",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MVC",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "DAO",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "REST)",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MySQL",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Maven",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Eclipse",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MSVisio",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "UML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Git",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "ActiveVOS",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SOAPUI",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Selenium WebDriver",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Jenkins",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Glassfish",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Tomcat",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Spatial Data-mart",
-                "description": "Spatial Data-mart is a web service application for data distribution. The easy to use system allows you to, search for your spatial data requirements, place orders online, keep track of orders and access orders, either emailed or downloadable depending on size.",
-                "role": "Module Leader",
-                "responsibilities": ["Creating High-level Design and Low-level design from the requirement gathered.", "Designing and development of the security roles, email client for public access user to download data.", "As a part of performance improvement, designed and developed a new Product Exclusion functionality to allow administrator to add remove products to download from FTP.", "Distribution of work within the team of 3 developers and integrating the their deliveries"],
-                "testimonials": [
-                    {
-                        "description": "A very cool testimonial #1",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "A very cool testimonial #2",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Land Victoria",
-                "technologies": [
-                    {
-                        "name": "JSON",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Design Patterns",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Spring 3.1 (AOP",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MVC",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "DAO)",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate 4.0",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MS SQL Server 2008",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Maven",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Eclipse",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Microsoft Visio",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "UML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SVN",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Victoria Information Network for Emergencies (VINE)",
-                "description": "VINE is a mobile application developed for Fire service commission of Victoria. The mobile application is used to inform the user about the planning, sustaining and recovering from the emergencies, such as fire, flood, storm etc. in the state of Victoria. ",
-                "role": "Developer",
-                "responsibilities": ["Contributed in the designing and development of the front end as well as back end modules.", "Creating High-level Design and Low-level design from the requirement gathered.", "Distribution of work within the team of 3 developers and integrating the their deliveries"],
-                "testimonials": [
-                    {
-                        "description": "A very cool testimonial #1",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "A very cool testimonial #2",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Proof of Concept",
-                "technologies": [
-                    {
-                        "name": "JSON",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JQuery",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JQuery-mobile",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "OpenLayers.js",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Design Patterns",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Spring 3.1 (AOP",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MVC",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "DAO)",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate 4.0",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "AJAX",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MS SQL Server 2008",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Maven",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Eclipse",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Microsoft",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Visio",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "UML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SVN",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Water Health Investment Planning (WHIP)",
-                "description": "WHIP is an application used to manage the 5 years financial plan for developing and maintenance of water bodies in and across Melbourne region. The application helps the user to plan and create the intents, project and targets with the help on maps.",
-                "role": "Developer",
-                "responsibilities": ["Working on the client location for requirement gathering and coordination.", "Creating High-level Design and Low-level design from the requirement gathered.", "Involved in designing and development of the application.", "Designing and development of new requirements and modules", "Performance tuning of the application with respect to databases and java coding.", "Release management and application deployment coordinator"],
-                "testimonials": [
-                    {
-                        "description": "A very cool testimonial #1",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "A very cool testimonial #2",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Melbourne Water",
-                "technologies": [
-                    {
-                        "name": "JSON",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JPA",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Java 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JavaScript",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "GWT 2.4",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Spring 3.1 (AOP",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MVC",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "DAO)",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate 4.0",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "AJAX",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JQuery",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Log4j 1.2.14",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MS SQL Server 2008",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Maven",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Eclipse",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SVN",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM Agile",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "GeoServer 3.2.7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "IIS 7.5",
-                        "experience": "0"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Sabre Travel Technologies",
-        "logo":"img/portfolio/sabre.png",
-        "location": {
-            "state": "",
-            "country": "",
-            "city": ""
-        },
-        "designation": "Senior Software Developer",
-        "startDt": "03/2012",
-        "endDt": "12/2012",
-        "projects": [
-            {
-                "name": "Travelocity.com Cruise Module (Travel Domain)",
-                "description": "Travelocity is an online travel portal for shopping and booking airline, hotel, and car and cruise line. Travelocity is the sixth largest travel agency booking $10.1 billion in travel worldwide in 2006. Based in Southlake, Texas, Travelocity has offices throughout the U.S. and also owns and operates Travelocity Business® for corporate travelers, lastminute.com, a leader in European online travel and ZUJI, a leader in Asia-Pacific online travel. Travelocity-Cruise module is specifically focused on shopping and booking cruises on different cruise lines such Oceania, Norwegian and many more.",
-                "role": "Module Leader",
-                "responsibilities": ["Acting as module lead and POC for, Configuration and Change management tool (CCMTool) which is used to launch promotions and deals. And, Cruise-services and schedulers are sub systems used to send email and process vendor data for different cruises they support.", "Mainly involved in client facing projects such as Royal Bank of Canada.", "Designing and development of new requirements and modules", "Training new resources on the application and project processes to bring them up to speed", "Develop and maintain structured code from technical specifications and requirements.", "Developing the High-level Design and Low-level design documents for the enhancement and getting it approved by the business analysts.", "Currently working 12.12 release enhancements related to Travelocity cruise module.", "Worked on performance tuning of the application with respect to databases and java coding.", "Code review for my peers and helping them in their deliveries", "Worked on localization and internationalization of the application."],
-                "testimonials": [
-                    {
-                        "description": "A very cool testimonial #1",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "A very cool testimonial #2",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Product",
-                "technologies": [
-                    {
-                        "name": "Java",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JavaScript",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Shell Scripts",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "PL-SQL",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "ActionScripts",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Spring 3.0 (AOP",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MVC",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "DAO)",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Struts 1.x",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "AJAX",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JQuery",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Adobe Flex 3.0",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Velocity DAO Templates",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Blaze-ds",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Maven",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Eclipse",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "IntelliJ",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JMeter",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Bugzilla",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Cygwin",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SQL Developer",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hudson",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Build Environment",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "TOAD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Microsoft Visio",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "UML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Tortoise SVN and CVS",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM Agile",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Manhattan Associates",
-        "logo":"img/portfolio/manh.png",
-        "location": {
-            "state": "",
-            "country": "",
-            "city": ""
-        },
-        "designation": "Senior Software Engineerr",
-        "startDt": "03/2010",
-        "endDt": "03/2012",
-        "projects": [
-            {
-                "name": "SCOPE Transport Lifecycle Management – Manual Consolidation Workspace (SCM)",
-                "description": "Manhattan Associates is a best-in-class global solutions provider for supply chain leaders—organizations intent on creating enduring market advantages by leveraging their supply chains. We help our customers successfully manage accelerating and fluctuating market demands, as well as master the increasing complexity and volatility of their local and global supply chains. Transport Lifecycle Management module which is used to crate shipments out of orders, both automatically and manually. Manual Consolidation Workspace is used to manually plan the shipments.",
-                "role": "Module Leader",
-                "responsibilities": ["Developing the High-level Design and Low-level design documents for the enhancement and getting it approved by the BA’s.", "I was the part of Transport Lifecycle Management migration from JSF to Spring 2.0.", "Client delivery for Manual Consolidation Workspace module which was one of the best deliveries made to CNS and was highly appreciated by the client.", "Worked on performance tuning of the application with respect to databases and java coding.", "Code review for my peers and helping them in their deliveries", "Worked on localization and internationalization of the application"],
-                "testimonials": [
-                    {
-                        "description": "Client delivery for Manual Consolidation Workspace module, was one of the best deliveries made to CNS and was highly appreciated by the client.",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Created a Proof-of-concept for Automatic logging systems using AOP",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Product",
-                "technologies": [
-                    {
-                        "name": "Java",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JavaScript",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Shell Scripts",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "PL-SQL",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "ActionScripts",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Spring 3.0 (AOP",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MVC",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "DAO)",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hibernate",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Struts 1.x",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "AJAX",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JQuery",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Adobe Flex 3.0",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Velocity DAO Templates",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Blaze-ds",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Maven",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Eclipse",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "IntelliJ",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JMeter",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Bugzilla",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Cygwin",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SQL Developer",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Hudson",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Build Environment",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "TOAD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Microsoft Visio",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "UML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Tortoise SVN and CVS",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SCRUM Agile",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Apache Tomcat 7",
-                        "experience": "0"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Tech Mahindra Limited",
-        "logo":"img/portfolio/techm.png",
-        "location": {
-            "state": "",
-            "country": "",
-            "city": ""
-        },
-        "designation": "Senior Technical Associate",
-        "startDt": "03/2009",
-        "endDt": "03/2010",
-        "projects": [
-            {
-                "name": "Phoenix – AT&T Services Inc. (Telecom Domain)",
-                "description": "Phoenix is a web application which is used by AT&T customer care representatives catering the small business customers, for their telecom products and services. The project was a CLIENT MANAGED PROJECT with daily status update and meetings.",
-                "role": "Senior Technical Associate",
-                "responsibilities": ["Conducting training for new resources on product and technical knowledge.", "Analyzing, designing, developing, unit testing and supporting the client application", "Attending and conducting the client and peer review meetings to ensure the quality of the product", "Documentation of the Design, Unit test plan and Code review documents", "Configured the local workspace for Phoenix Offshore team", "Configured the hot deployment for the application", "Configured the debug environment for the application", "Developed a automation BASH script to increase the productivity"],
-                "testimonials": [
-                    {
-                        "description": "Received ATT (Director IT ) Client Appreciation  for RPA 1006 Release",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Received ‘Cookie’ (COA) award for excellent work in Phoenix",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Configured the local workspace for Phoenix Offshore team",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Configured the hot deployment for the application",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Configured the debug environment for the application",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Developed a automation BASH script to increase the productivity",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "AT&T",
-                "technologies": [
-                    {
-                        "name": "Java",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JavaScript",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "UNIX Bash and Korn Shell",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Oracle PL-SQL",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Web-services",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Struts 1.x",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "EJB 2.0",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Maven",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Ant",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Clear Case",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Clear Quest",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Design Patterns",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "UML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "SOAP UI",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Agile Test Drive Development",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Web-logic Application Server",
-                        "experience": "0"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "CSC Private Ltd",
-        "logo":"img/portfolio/csc.png",
-        "location": {
-            "state": "",
-            "country": "",
-            "city": ""
-        },
-        "designation": "Software Engineer",
-        "startDt": "10/2006",
-        "endDt": "03/2009",
-        "projects": [
-            {
-                "name": "Life Underwriting System (LUS) (Underwriting Domain)",
-                "description": "LUS is a CSC’s legacy product used to help life insurance underwriters for analyzing and approving/rejecting life insurance policies. This application has an interface with Cyber-life Mainframe systems to fetch the life insurance policy details. ",
-                "role": "Software Engineer",
-                "responsibilities": ["Played the role of on-site coordinator and technical lead", "Conducted reverse knowledge transfer to share our understanding of the system", "Training my peers on the product and technical knowledge", "Designing, developing, unit testing and supporting the product and developing new utilities"],
-                "testimonials": [
-                    {
-                        "description": "Developed 4 utilities, Admin2LUS, Primary Checks, App-on-line Verification  and Final Action Status Print Creation",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Developed a SQL Stored Procedure based utility to fix 100 requirement clients",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Setting up the debugging environment for  the existing system",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "An annual cost saving of $78,650 using above utilities",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Awarded two Certificate Of Appreciation (COA) award for developing utilities and excellent work",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Awarded two BRAVO Award from the Client Manager (US, Allstate Insurance) for resolving a complex problem and Data Centre Migration Project completion",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Allstate Insurance, Northbrook, USA",
-                "technologies": [
-                    {
-                        "name": "Core Java",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "C#",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "C++",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "VB.net",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "VB Excel Macros",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MSMQ",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Data-alliance formats",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "MS SQL Server",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "VSS",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "FTP",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Shell Scripts",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Resource Management System (RMS)",
-                "description": "RMS is a CSC in-house application which was developed for internal program management. The application was a web based portal which is used to manage projects, assignments, tasks and resources. This tool also manages the resource allocation and future resource travel planning.",
-                "role": "Technical Leader",
-                "responsibilities": ["Responsible for the delivery of the projects and leading a team of four", "Responsible for gathering the requirements, creating the design documents.", "Developed a major module which deals with the graphical chart representations", "Trained my team in the Struts framework", "The application was highly appreciated by the CSC managers"],
-                "testimonials": [
-                    {
-                        "description": "Learned Struts and conducted a session for my team mates",
-                        "company": "",
-                        "givenBy": ""
-                    },
-                    {
-                        "description": "Created a Horizontal Bar Chart for representing resource’s future resource travel plans",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Product",
-                "technologies": [
-                    {
-                        "name": "Struts 1.x MVC",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "J2EE",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Oracle",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Websphere server",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "JFreeCharts",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "Design Patterns",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "UML",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "VSS",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XML/XSLT",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "XSD",
-                        "experience": "0"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Syntel Private Ltd",
-        "logo":"img/portfolio/syntel.png",
-        "location": {
-            "state": "",
-            "country": "",
-            "city": ""
-        },
-        "designation": "Analyst Programmer",
-        "startDt": "09/2005",
-        "endDt": "10/2006",
-        "projects": [
-            {
-                "name": "Inspection Stage Document Mgmt. System (ISDMS)",
-                "description": "ISDMS was a Product Lifecycle Management customization done for L&T to automate the documentation of seam management process. The project was done on existing Product lifecycle management implementation and involves different functionality to approve a seam and manage reports.",
-                "role": "Senior Technical Associate",
-                "responsibilities": ["Responsible for designing, developing and testing a module in ISDMS called RTUT (Radioactive and ultraviolet testing) module"],
-                "testimonials": [
-                    {
-                        "description": "",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "Indian Navy",
-                "technologies": [
-                    {
-                        "name": "EDS Teamcenter",
-                        "experience": "0"
-                    },
-                    {
-                        "name": " Oracle",
-                        "experience": "0"
-                    },
-                    {
-                        "name": " XML/XSLT",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Pay Store GPP Rewrite",
-                "description": "This was a re-engineering project for American Express Gift Card business",
-                "role": "Analyst Programmer",
-                "responsibilities": ["Creating Functional Understanding Document (FUD) for the existing systems to gather the requirements"],
-                "testimonials": [
-                    {
-                        "description": "",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "American Express",
-                "technologies": [
-                    {
-                        "name": "Coolplex",
-                        "experience": "0"
-                    },
-                    {
-                        "name": "AIS 400",
-                        "experience": "0"
-                    }
-                ]
-            },
-            {
-                "name": "Maintenance and enhancements of the existing PLM system",
-                "description": "ISDMS was a Product Lifecycle Management customization done for L&T to automate the documentation of seam management process. The project was done on existing Product lifecycle management implementation and involves different functionality to approve a seam and manage reports.",
-                "role": "Analyst Programmer",
-                "responsibilities": ["Defect management and timely resolution of the critical issues and bugs in the existing PLM implementation"],
-                "testimonials": [
-                    {
-                        "description": "",
-                        "company": "",
-                        "givenBy": ""
-                    }
-                ],
-                "client": "OTIS",
-                "technologies": [
-                    {
-                        "name": "EDS Teamcenter",
-                        "experience": "0"
-                    },
-                    {
-                        "name": " Oracle",
-                        "experience": "0"
-                    },
-                    {
-                        "name": " XML/XSLT",
-                        "experience": "0"
-                    }
-                ]
-            }
-        ]
-    }
-],
-    "allTechnologies": [
-    {
-        "name": "GWT 2.4",
+    "designation": "Lead Developer",
+    "startDt": "09/2013",
+    "endDt": "Present",
+    "projects": [{
+      "name": "Project BURRITO",
+      "description": "Application is a re-engineering project to improve the performance of existing PHP application using in-memory data grid and reducing number of database call to MySQL DB. The existing solution was taking 4 minutes’ process one update. I was asked to design a solution to improve upon the delay using in-memory database however making sure the application is highly available and scalable application to handle the load dynamically.",
+      "role": "Lead Developer/Architect",
+      "responsibilities": [
+        "Leading the team of 4 developers in implementing a high performance and highly available solution",
+        "Implementing a micro-service architecture design balancing the trade-off between performance and space.",
+        "Conducting workshops for the stack-holder to explain the application design and status of the projects",
+        "Improved the performance from 4 minutes to process on market update to 52 milliseconds",
+        "Organizing training for the team to keep them motivated, simultaneously upgrading their skill to meet the changing need of the market."
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Wagering",
+      "technologies": [{
+        "name": "Java 8",
         "experience": "0"
-    },
-    {
-        "name": "Mule Studio",
+      }, {
+        "name": "Spring-boot",
         "experience": "0"
-    },
-    {
-        "name": "Blaze-ds",
+      }, {
+        "name": "Hazelcast IMDG",
         "experience": "0"
-    },
-    {
+      }, {
+        "name": "Hazelcast Clustering",
+        "experience": "0"
+      }, {
+        "name": "Gearman",
+        "experience": "0"
+      }, {
+        "name": "RabbitMQ",
+        "experience": "0"
+      }, {
         "name": "Hibernate 4",
         "experience": "0"
-    },
-    {
-        "name": "RESTful Web Service",
+      }, {
+        "name": "CometD",
         "experience": "0"
-    },
-    {
-        "name": "MuleESB",
-        "experience": "0"
-    },
-    {
-        "name": "JMeter",
-        "experience": "0"
-    },
-    {
-        "name": "DAO",
-        "experience": "0"
-    },
-    {
-        "name": "Selenium WebDriver",
-        "experience": "0"
-    },
-    {
-        "name": "AJAX",
-        "experience": "0"
-    },
-    {
-        "name": "VB.net",
-        "experience": "0"
-    },
-    {
-        "name": "Handlebars.js",
-        "experience": "0"
-    },
-    {
-        "name": "MongoUI",
-        "experience": "0"
-    },
-    {
-        "name": "Oracle PL-SQL",
-        "experience": "0"
-    },
-    {
-        "name": "Data-alliance formats",
-        "experience": "0"
-    },
-    {
-        "name": "Hudson",
-        "experience": "0"
-    },
-    {
-        "name": "MSMQ",
-        "experience": "0"
-    },
-    {
-        "name": "MongoDB",
-        "experience": "0"
-    },
-    {
-        "name": "Hibernate",
-        "experience": "0"
-    },
-    {
-        "name": "PL-SQL",
-        "experience": "0"
-    },
-    {
-        "name": "Java 7",
-        "experience": "0"
-    },
-    {
-        "name": "MVC",
-        "experience": "0"
-    },
-    {
-        "name": "Quartz Job Scheduler",
-        "experience": "0"
-    },
-    {
-        "name": "JQuery",
-        "experience": "0"
-    },
-    {
-        "name": "PowerMockito",
-        "experience": "0"
-    },
-    {
-        "name": "Finagle",
-        "experience": "0"
-    },
-    {
-        "name": "Shell Scripts",
-        "experience": "0"
-    },
-    {
-        "name": "Oracle",
-        "experience": "0"
-    },
-    {
-        "name": "Bamboo",
-        "experience": "0"
-    },
-    {
-        "name": "AIS 400",
-        "experience": "0"
-    },
-    {
-        "name": "Jenkins",
-        "experience": "0"
-    },
-    {
-        "name": "Log4j 1.2.14",
-        "experience": "0"
-    },
-    {
-        "name": "XSD",
-        "experience": "0"
-    },
-    {
-        "name": "Tortoise SVN and CVS",
-        "experience": "0"
-    },
-    {
-        "name": "Clear Case",
-        "experience": "0"
-    },
-    {
-        "name": "MySQL",
-        "experience": "0"
-    },
-    {
-        "name": "AspectJ",
-        "experience": "0"
-    },
-    {
-        "name": "Build Environment",
-        "experience": "0"
-    },
-    {
-        "name": "FTP",
-        "experience": "0"
-    },
-    {
-        "name": "JSON",
-        "experience": "0"
-    },
-    {
-        "name": "Glassfish",
-        "experience": "0"
-    },
-    {
-        "name": " Oracle",
-        "experience": "0"
-    },
-    {
-        "name": "VSS",
-        "experience": "0"
-    },
-    {
-        "name": "JQuery-mobile",
-        "experience": "0"
-    },
-    {
-        "name": "Hibernate 4.0",
-        "experience": "0"
-    },
-    {
-        "name": "Cobertura",
-        "experience": "0"
-    },
-    {
-        "name": "IIS 7.5",
-        "experience": "0"
-    },
-    {
-        "name": "JPA",
-        "experience": "0"
-    },
-    {
-        "name": " XML/XSLT",
-        "experience": "0"
-    },
-    {
-        "name": "Zookeeper",
-        "experience": "0"
-    },
-    {
-        "name": "J2EE",
-        "experience": "0"
-    },
-    {
-        "name": "Tomcat",
-        "experience": "0"
-    },
-    {
-        "name": "GeoServer 3.2.7",
-        "experience": "0"
-    },
-    {
-        "name": "VB Excel Macros",
-        "experience": "0"
-    },
-    {
-        "name": "Lo-dash.js",
-        "experience": "0"
-    },
-    {
-        "name": "XML",
-        "experience": "0"
-    },
-    {
-        "name": "ActiveVOS",
-        "experience": "0"
-    },
-    {
-        "name": "Eclipse",
-        "experience": "0"
-    },
-    {
-        "name": "EJB 2.0",
-        "experience": "0"
-    },
-    {
-        "name": "SOAP UI",
-        "experience": "0"
-    },
-    {
-        "name": "Shell Scripting",
-        "experience": "0"
-    },
-    {
-        "name": "XML/XSLT",
-        "experience": "0"
-    },
-    {
-        "name": "Vert.x",
-        "experience": "0"
-    },
-    {
-        "name": "Struts 1.x",
-        "experience": "0"
-    },
-    {
-        "name": "Spring 3.0 (AOP",
-        "experience": "0"
-    },
-    {
-        "name": "Java",
-        "experience": "0"
-    },
-    {
-        "name": "SOAPUI",
-        "experience": "0"
-    },
-    {
-        "name": "Design Patterns",
-        "experience": "0"
-    },
-    {
-        "name": "Jetty",
-        "experience": "0"
-    },
-    {
+      }, {
         "name": "Maven",
         "experience": "0"
-    },
-    {
-        "name": "Velocity DAO Templates",
+      }, {
+        "name": "TestNG",
         "experience": "0"
-    },
-    {
-        "name": "Adobe Flex 3.0",
+      }, {
+        "name": "Spring-boot Batch",
         "experience": "0"
-    },
-    {
-        "name": "Bugzilla",
+      }, {
+        "name": "JSON",
         "experience": "0"
-    },
-    {
-        "name": "Redis",
+      }, {
+        "name": "REST-ful API",
         "experience": "0"
-    },
-    {
-        "name": "Apache Tomcat 7",
+      }, {
+        "name": "Docker",
         "experience": "0"
-    },
-    {
-        "name": "Visio",
+      }, {
+        "name": "NewRelic",
         "experience": "0"
-    },
-    {
-        "name": "MSVisio",
+      }, {
+        "name": "Etsy StatsD",
         "experience": "0"
-    },
-    {
-        "name": "Microsoft",
+      }, {
+        "name": "AWS Elastic Beanstalk",
         "experience": "0"
-    },
-    {
-        "name": "EDS Teamcenter",
-        "experience": "0"
-    },
-    {
-        "name": "RESTful services)",
-        "experience": "0"
-    },
-    {
-        "name": "DAO)",
-        "experience": "0"
-    },
-    {
+      }, {
         "name": "SCRUM Agile",
         "experience": "0"
-    },
-    {
-        "name": "Web-logic Application Server",
+      }]
+    }, {
+      "name": "Project QUADDIE Cash-out ",
+      "description": "Application to provide QUADDIE customer to cash-out their winnings after 1 and 2 leg outcomes. The application provides the customer an ability to calculate cash-out offer, and then cash the winnings based on the offer provided. The application was divided into 3 main modules, cash-out offer calculator, cash-out offer accounting and cash-out offer reporting.",
+      "role": "Lead Developer/Architect",
+      "responsibilities": [
+        "Responsible for the technical architecture of the project",
+        "Providing technical guidance and responsible for the delivery of the project milestones",
+        "Leading the team of 6 developers and managing stakeholder expectations",
+        "Coordinating with SRO for the authentication and security requirement "
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Tote",
+      "technologies": [{
+        "name": "Java 8",
         "experience": "0"
-    },
-    {
-        "name": "UML",
+      }, {
+        "name": "Spring-boot",
         "experience": "0"
-    },
-    {
-        "name": "JavaScript",
+      }, {
+        "name": "PostgreSQL",
         "experience": "0"
-    },
-    {
-        "name": "Git Stash",
+      }, {
+        "name": "Spring-boot Security",
         "experience": "0"
-    },
-    {
-        "name": "TOAD",
+      }, {
+        "name": "Spring MVC",
         "experience": "0"
-    },
-    {
-        "name": "REST)",
+      }, {
+        "name": "Splunk",
         "experience": "0"
-    },
-    {
-        "name": "Ant",
+      }, {
+        "name": "Hibernate 4",
         "experience": "0"
-    },
-    {
-        "name": "Coolplex",
+      }, {
+        "name": "Maven",
         "experience": "0"
-    },
-    {
-        "name": "Storm",
+      }, {
+        "name": "TestNG",
         "experience": "0"
-    },
-    {
-        "name": "Spring 3.1 (AOP",
+      }, {
+        "name": "Spock",
         "experience": "0"
-    },
-    {
-        "name": "Cygwin",
+      }, {
+        "name": "Spring-boot Batch",
         "experience": "0"
-    },
-    {
-        "name": "Clear Quest",
+      }, {
+        "name": "JSON",
         "experience": "0"
-    },
-    {
-        "name": "Junit",
+      }, {
+        "name": "REST-ful API",
         "experience": "0"
-    },
-    {
-        "name": "Struts 1.x MVC",
+      }, {
+        "name": "Jenkins",
         "experience": "0"
-    },
-    {
-        "name": "Backbone.js",
+      }, {
+        "name": "SCRUM Agile",
         "experience": "0"
-    },
-    {
-        "name": "MS SQL Server 2008",
+      }]
+    }, {
+      "name": "Project TAMALE ",
+      "description": "Application to expose the wagering feed to the consumers in asynchronous way. This application provides dynamic creation of consumers, maintaining the consumer session. Maintain the sanity of the wagering data by running schedule job to clean out expired data. Provide the functionality for the consumer to get the snapshot of wagering data. Provides a Angular.js UI to check the status of the application, invoke house-keeping job, create new consumers and audit the consumer transactions. Also exposes a Java swing thin client application which is used by both testers and business to verify the data going through tamale.",
+      "role": "Senior Developer",
+      "responsibilities": [
+        "Decreases the snapshot time for each consumer from 2 hours to 6 seconds for 1.7 million messages (5GB) of data.",
+        "Decreases the snapshot time between wagering system and tamale from 8 hours to 1.5 hours for 1.7 million messages (5GB) of data",
+        "No maintenance cost",
+        "High throughput and performance"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "SunBets",
+      "technologies": [{
+        "name": "Java 8",
         "experience": "0"
-    },
-    {
-        "name": "C#",
+      }, {
+        "name": "Spring-boot",
         "experience": "0"
-    },
-    {
-        "name": "ActionScripts",
+      }, {
+        "name": "PostgreSQL",
         "experience": "0"
-    },
-    {
-        "name": "Core Java",
+      }, {
+        "name": "Spring-boot Security",
         "experience": "0"
-    },
-    {
-        "name": "Linux BASH shell",
+      }, {
+        "name": "Spring MVC",
         "experience": "0"
-    },
-    {
-        "name": "IntelliJ",
+      }, {
+        "name": "Spring-boot Reactor.io",
         "experience": "0"
-    },
-    {
-        "name": "JFreeCharts",
+      }, {
+        "name": "Apache Camel",
         "experience": "0"
-    },
-    {
-        "name": "SCRUM",
+      }, {
+        "name": "Maven",
         "experience": "0"
+      }, {
+        "name": "TestNG",
+        "experience": "0"
+      }, {
+        "name": "Spock",
+        "experience": "0"
+      }, {
+        "name": "Spring-boot Batch",
+        "experience": "0"
+      }, {
+        "name": "JSON",
+        "experience": "0"
+      }, {
+        "name": "REST-ful API",
+        "experience": "0"
+      }, {
+        "name": "Jenkins",
+        "experience": "0"
+      }, {
+        "name": "YAML",
+        "experience": "0"
+      }, {
+        "name": "AngularJS",
+        "experience": "0"
+      }, {
+        "name": "BootstrapJS",
+        "experience": "0"
+      }, {
+        "name": "NodeJS",
+        "experience": "0"
+      }, {
+        "name": "RabbitMQ",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Project Bettor-data Replacement ",
+      "description": "Application to consume huge volume of data from the betting feed provider converting them to a common business message then pushing these message based on the message priority to wagering system. The business entity represented by the message is completely trackable through-out the flow from the feed provider to the wagering system. ",
+      "role": "Senior Developer",
+      "responsibilities": [
+        "The most successful project in the TABCORP’s history.",
+        "Zero maintenance ",
+        "High performance, message is transferred from the feed provider to wagering system within 200ms.",
+        "Responsible for designing the application for high-frequency and high-perfromance"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Wagering",
+      "technologies": [{
+        "name": "Java 8",
+        "experience": "0"
+      }, {
+        "name": "Spring-boot",
+        "experience": "0"
+      }, {
+        "name": "Apache Camel",
+        "experience": "0"
+      }, {
+        "name": "Gearman",
+        "experience": "0"
+      }, {
+        "name": "H2 In-memory DB",
+        "experience": "0"
+      }, {
+        "name": "Maven",
+        "experience": "0"
+      }, {
+        "name": "TestNG",
+        "experience": "0"
+      }, {
+        "name": "JSON",
+        "experience": "0"
+      }, {
+        "name": "REST-ful API",
+        "experience": "0"
+      }, {
+        "name": "Jenkins",
+        "experience": "0"
+      }, {
+        "name": "RabbitMQ",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }]
+    }]
+  }, {
+    "name": "Victoria University",
+    "logo": "img/portfolio/vicuni.png",
+    "location": {
+      "state": "",
+      "country": "",
+      "city": ""
     },
-    {
+    "designation": "Senior Software Developer",
+    "startDt": "09/2013",
+    "endDt": "Present",
+    "projects": [{
+      "name": "D2l Echo Integration",
+      "description": "Exposing REST API’s to synchronize the recording data between D2L and Echo 360 thus making the lecture recordings available in the D2L and VUC portal.",
+      "role": "Senior Software Developer",
+      "responsibilities": [
+        "Analysis and designing a solution based on the requirement give by business.",
+        "Developing, integrating, testing and deploying the solution on the existing architecture.",
+        "Coordinating and supporting with the QA and UAT team for a bug free delivery"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "eAdmission",
+      "technologies": [{
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
         "name": "XSLT",
         "experience": "0"
-    },
-    {
-        "name": "Microsoft Visio",
+      }, {
+        "name": "XSD",
         "experience": "0"
-    },
-    {
-        "name": "Web-services",
+      }, {
+        "name": "Shell Scripting",
         "experience": "0"
-    },
-    {
-        "name": "Agile Test Drive Development",
+      }, {
+        "name": "Junit",
         "experience": "0"
-    },
-    {
-        "name": "OpenLayers.js",
+      }, {
+        "name": "Hibernate 4",
         "experience": "0"
-    },
-    {
-        "name": "SQL Developer",
+      }, {
+        "name": "Vert.x",
         "experience": "0"
-    },
-    {
-        "name": "UNIX Bash and Korn Shell",
-        "experience": "0"
-    },
-    {
-        "name": "SVG",
-        "experience": "0"
-    },
-    {
-        "name": "MS SQL Server",
-        "experience": "0"
-    },
-    {
-        "name": "d3.js",
-        "experience": "0"
-    },
-    {
-        "name": "Git",
-        "experience": "0"
-    },
-    {
-        "name": "Websphere server",
-        "experience": "0"
-    },
-    {
-        "name": "C++",
-        "experience": "0"
-    },
-    {
+      }, {
         "name": "Mockito",
         "experience": "0"
+      }, {
+        "name": "PowerMockito",
+        "experience": "0"
+      }, {
+        "name": "Quartz Job Scheduler",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "RESTful Web Service",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Reconciliation",
+      "description": "A middle tier functionality to synchronize the student enrollment between Callista and Desire2Learn application.",
+      "role": "Senior Software Developer",
+      "responsibilities": [
+        "Analysis and designing a solution based on the requirement give by business.",
+        "Developing, integrating, testing and deploying the solution on the existing architecture.",
+        "Coordinating and supporting with the QA and UAT team for a bug free delivery"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "eAdmission",
+      "technologies": [{
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "Shell Scripting",
+        "experience": "0"
+      }, {
+        "name": "Junit",
+        "experience": "0"
+      }, {
+        "name": "Hibernate 4",
+        "experience": "0"
+      }, {
+        "name": "Vert.x",
+        "experience": "0"
+      }, {
+        "name": "Mockito",
+        "experience": "0"
+      }, {
+        "name": "PowerMockito",
+        "experience": "0"
+      }, {
+        "name": "Quartz Job Scheduler",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "RESTful Web Service",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }]
+    }, {
+      "name": "ESB REST API and D2L Backend",
+      "description": "Implementing REST service to expose backend functionality of D2L.",
+      "role": "Senior Software Developer",
+      "responsibilities": [
+        "Analysis and designing a solution based on the requirement give by business.",
+        "Developing, integrating, testing and deploying the solution on the existing architecture.",
+        "Coordinating and supporting with the QA and UAT team for a bug free delivery"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "eAdmission",
+      "technologies": [{
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "Junit",
+        "experience": "0"
+      }, {
+        "name": "Hibernate 4",
+        "experience": "0"
+      }, {
+        "name": "Vert.x",
+        "experience": "0"
+      }, {
+        "name": "Mockito",
+        "experience": "0"
+      }, {
+        "name": "PowerMockito",
+        "experience": "0"
+      }, {
+        "name": "Quartz Job Scheduler",
+        "experience": "0"
+      }, {
+        "name": "Linux BASH shell",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "RESTful Web Service",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Active Student Update Job",
+      "description": "An automated solution to update the students status from IDM to RightNow",
+      "role": "Senior Software Developer",
+      "responsibilities": [
+        "Analysis and designing a solution based on the requirement give by business.",
+        "Developing, integrating, testing and deploying the solution on the existing architecture.",
+        "Coordinating and supporting with the QA and UAT team for a bug free delivery"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "eEnablement",
+      "technologies": [{
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "Design Patterns",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Junit",
+        "experience": "0"
+      }, {
+        "name": "Hibernate 4",
+        "experience": "0"
+      }, {
+        "name": "MuleESB",
+        "experience": "0"
+      }, {
+        "name": "Mule Studio",
+        "experience": "0"
+      }, {
+        "name": "Vert.x",
+        "experience": "0"
+      }, {
+        "name": "Mockito",
+        "experience": "0"
+      }, {
+        "name": "PowerMockito",
+        "experience": "0"
+      }, {
+        "name": "Quartz Job Scheduler",
+        "experience": "0"
+      }, {
+        "name": "Linux BASH shell",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Contact Merge and Student Data Load",
+      "description": "Mule ESB solution to merge the duplicate contact information for each student and updating the same to the RightNow application using Web Service calls.",
+      "role": "Senior Software Developer",
+      "responsibilities": [
+        "Analysis and designing a solution based on the requirement give by business.",
+        "Developing, integrating, testing and deploying the solution on the existing architecture.",
+        "Coordinating and supporting with the QA and UAT team for a bug free delivery"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "eEnablement",
+      "technologies": [{
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "Design Patterns",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Junit",
+        "experience": "0"
+      }, {
+        "name": "Hibernate 4",
+        "experience": "0"
+      }, {
+        "name": "MuleESB",
+        "experience": "0"
+      }, {
+        "name": "Mule Studio",
+        "experience": "0"
+      }, {
+        "name": "Vert.x",
+        "experience": "0"
+      }, {
+        "name": "Mockito",
+        "experience": "0"
+      }, {
+        "name": "PowerMockito",
+        "experience": "0"
+      }, {
+        "name": "Quartz Job Scheduler",
+        "experience": "0"
+      }, {
+        "name": "Linux BASH shell",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Callista Transfer Status Update",
+      "description": "An automated solution for updating and viewing an application’s Callista (student management portal) transfer status in an Incident from the RightNow CX console to trigger selection workflow.",
+      "role": "Senior Software Developer",
+      "responsibilities": [
+        "Analysis and designing a solution based on the requirement give by business.",
+        "Developing, integrating, testing and deploying the solution on the existing architecture.",
+        "Coordinating and supporting with the QA and UAT team for a bug free delivery"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "User Provisioning",
+      "technologies": [{
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "Design Patterns",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Junit",
+        "experience": "0"
+      }, {
+        "name": "Hibernate 4",
+        "experience": "0"
+      }, {
+        "name": "MuleESB",
+        "experience": "0"
+      }, {
+        "name": "Mule Studio",
+        "experience": "0"
+      }, {
+        "name": "Vert.x",
+        "experience": "0"
+      }, {
+        "name": "Mockito",
+        "experience": "0"
+      }, {
+        "name": "PowerMockito",
+        "experience": "0"
+      }, {
+        "name": "Quartz Job Scheduler",
+        "experience": "0"
+      }, {
+        "name": "Linux BASH shell",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }]
+    }]
+  }, {
+    "name": "Blueflag Pvt. Ltd.",
+    "logo": "img/portfolio/bigdatr.png",
+    "location": {
+      "state": "",
+      "country": "",
+      "city": ""
     },
-    {
+    "designation": "Senior Software Developer",
+    "startDt": "06/2013",
+    "endDt": "09/2013",
+    "projects": [{
+      "name": "Bigdatr.com.au",
+      "description": "A beautiful data visualization tool that consolidates all your business intelligence in one location. Improve your marketing strategies with targeted media spend and full visibility of your competitors. Creative’s are analyzed by brand, product and campaign, visually, allowing you to quickly identify competitor activity and strategies. Currently working on parallel computing and distributed processing of high volume data.",
+      "role": "Technical Leader",
+      "responsibilities": [
+        "Research, Designing and developing high end Twitter Storm topologies for complex computations",
+        "Research, Designed and developed API and framework for creating multiple instances of Twitter Finagle servers in a protocol independent manner.",
+        "Research, Designing and developing API and framework for managing clusters and load balancing using Zookeeeper.",
+        "Using Junit and Mockito for unit testing the solutions"
+      ],
+      "testimonials": [{
+        "description": "A very cool testimonial #1",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "A very cool testimonial #2",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Inhouse",
+      "technologies": [{
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "Design Patterns",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Spring 3.1 (AOP",
+        "experience": "0"
+      }, {
+        "name": "MVC",
+        "experience": "0"
+      }, {
+        "name": "DAO",
+        "experience": "0"
+      }, {
+        "name": "RESTful services)",
+        "experience": "0"
+      }, {
+        "name": "Storm",
+        "experience": "0"
+      }, {
+        "name": "Finagle",
+        "experience": "0"
+      }, {
+        "name": "Junit",
+        "experience": "0"
+      }, {
+        "name": "Zookeeper",
+        "experience": "0"
+      }, {
+        "name": "Mockito",
+        "experience": "0"
+      }, {
+        "name": "Redis",
+        "experience": "0"
+      }, {
+        "name": "MongoDB",
+        "experience": "0"
+      }, {
+        "name": "AspectJ",
+        "experience": "0"
+      }, {
+        "name": "SVG",
+        "experience": "0"
+      }, {
+        "name": "d3.js",
+        "experience": "0"
+      }, {
+        "name": "Backbone.js",
+        "experience": "0"
+      }, {
+        "name": "Lo-dash.js",
+        "experience": "0"
+      }, {
+        "name": "Handlebars.js",
+        "experience": "0"
+      }, {
+        "name": "Cobertura",
+        "experience": "0"
+      }, {
+        "name": "RESTful Web Service",
+        "experience": "0"
+      }, {
+        "name": "MongoUI",
+        "experience": "0"
+      }, {
+        "name": "Maven",
+        "experience": "0"
+      }, {
+        "name": "Bamboo",
+        "experience": "0"
+      }, {
+        "name": "Git Stash",
+        "experience": "0"
+      }, {
+        "name": "IntelliJ",
+        "experience": "0"
+      }, {
+        "name": "Microsoft Visio",
+        "experience": "0"
+      }, {
+        "name": "UML",
+        "experience": "0"
+      }, {
+        "name": "SCRUM",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }, {
+        "name": "Jetty",
+        "experience": "0"
+      }]
+    }]
+  }, {
+    "name": "Dialog IT",
+    "logo": "img/portfolio/dialog.png",
+    "location": {
+      "state": "",
+      "country": "",
+      "city": ""
+    },
+    "designation": "Software Consultant",
+    "startDt": "01/2013",
+    "endDt": "06/2013",
+    "projects": [{
+      "name": "AWARIS",
+      "description": "The Bureau of Meteorology is Australia's national weather, climate and water agency. Its expertise and services assist Australians in dealing with the harsh realities of their natural environment, including drought, floods, fires, storms, tsunami and tropical cyclones. Through regular forecasts, warnings, monitoring and advice spanning the Australian region and Antarctic territory, the Bureau provides one of the most fundamental and widely used services of government.",
+      "role": "Software Developer",
+      "responsibilities": [
+        "Contributed in the designing and development of new enhancements.",
+        "Creating High-level Design and Low-level design from the requirement gathered."
+      ],
+      "testimonials": [{
+        "description": "A very cool testimonial #1",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "A very cool testimonial #2",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Bureau of Meteorology",
+      "technologies": [{
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Spring 3.1 (AOP",
+        "experience": "0"
+      }, {
+        "name": "MVC",
+        "experience": "0"
+      }, {
+        "name": "DAO",
+        "experience": "0"
+      }, {
+        "name": "REST)",
+        "experience": "0"
+      }, {
+        "name": "MySQL",
+        "experience": "0"
+      }, {
+        "name": "Maven",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "Eclipse",
+        "experience": "0"
+      }, {
+        "name": "MSVisio",
+        "experience": "0"
+      }, {
+        "name": "UML",
+        "experience": "0"
+      }, {
+        "name": "Git",
+        "experience": "0"
+      }, {
+        "name": "ActiveVOS",
+        "experience": "0"
+      }, {
+        "name": "SOAPUI",
+        "experience": "0"
+      }, {
+        "name": "Selenium WebDriver",
+        "experience": "0"
+      }, {
+        "name": "Jenkins",
+        "experience": "0"
+      }, {
+        "name": "SCRUM",
+        "experience": "0"
+      }, {
+        "name": "Glassfish",
+        "experience": "0"
+      }, {
+        "name": "Tomcat",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Spatial Data-mart",
+      "description": "Spatial Data-mart is a web service application for data distribution. The easy to use system allows you to, search for your spatial data requirements, place orders online, keep track of orders and access orders, either emailed or downloadable depending on size.",
+      "role": "Module Leader",
+      "responsibilities": [
+        "Creating High-level Design and Low-level design from the requirement gathered.",
+        "Designing and development of the security roles, email client for public access user to download data.",
+        "As a part of performance improvement, designed and developed a new Product Exclusion functionality to allow administrator to add remove products to download from FTP.",
+        "Distribution of work within the team of 3 developers and integrating the their deliveries"
+      ],
+      "testimonials": [{
+        "description": "A very cool testimonial #1",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "A very cool testimonial #2",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Land Victoria",
+      "technologies": [{
+        "name": "JSON",
+        "experience": "0"
+      }, {
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "Design Patterns",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Spring 3.1 (AOP",
+        "experience": "0"
+      }, {
+        "name": "MVC",
+        "experience": "0"
+      }, {
+        "name": "DAO)",
+        "experience": "0"
+      }, {
+        "name": "Hibernate 4.0",
+        "experience": "0"
+      }, {
+        "name": "MS SQL Server 2008",
+        "experience": "0"
+      }, {
+        "name": "Maven",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "Eclipse",
+        "experience": "0"
+      }, {
+        "name": "Microsoft Visio",
+        "experience": "0"
+      }, {
+        "name": "UML",
+        "experience": "0"
+      }, {
         "name": "SVN",
         "experience": "0"
-    }
-],
-    "allTestimonials": [
-    {
-        "description": "",
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Victoria Information Network for Emergencies (VINE)",
+      "description": "VINE is a mobile application developed for Fire service commission of Victoria. The mobile application is used to inform the user about the planning, sustaining and recovering from the emergencies, such as fire, flood, storm etc. in the state of Victoria. ",
+      "role": "Developer",
+      "responsibilities": [
+        "Contributed in the designing and development of the front end as well as back end modules.",
+        "Creating High-level Design and Low-level design from the requirement gathered.",
+        "Distribution of work within the team of 3 developers and integrating the their deliveries"
+      ],
+      "testimonials": [{
+        "description": "A very cool testimonial #1",
         "company": "",
         "givenBy": ""
+      }, {
+        "description": "A very cool testimonial #2",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Proof of Concept",
+      "technologies": [{
+        "name": "JSON",
+        "experience": "0"
+      }, {
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "JQuery",
+        "experience": "0"
+      }, {
+        "name": "JQuery-mobile",
+        "experience": "0"
+      }, {
+        "name": "OpenLayers.js",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "Design Patterns",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Spring 3.1 (AOP",
+        "experience": "0"
+      }, {
+        "name": "MVC",
+        "experience": "0"
+      }, {
+        "name": "DAO)",
+        "experience": "0"
+      }, {
+        "name": "Hibernate 4.0",
+        "experience": "0"
+      }, {
+        "name": "AJAX",
+        "experience": "0"
+      }, {
+        "name": "MS SQL Server 2008",
+        "experience": "0"
+      }, {
+        "name": "Maven",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "Eclipse",
+        "experience": "0"
+      }, {
+        "name": "Microsoft",
+        "experience": "0"
+      }, {
+        "name": "Visio",
+        "experience": "0"
+      }, {
+        "name": "UML",
+        "experience": "0"
+      }, {
+        "name": "SVN",
+        "experience": "0"
+      }, {
+        "name": "SCRUM",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Water Health Investment Planning (WHIP)",
+      "description": "WHIP is an application used to manage the 5 years financial plan for developing and maintenance of water bodies in and across Melbourne region. The application helps the user to plan and create the intents, project and targets with the help on maps.",
+      "role": "Developer",
+      "responsibilities": [
+        "Working on the client location for requirement gathering and coordination.",
+        "Creating High-level Design and Low-level design from the requirement gathered.",
+        "Involved in designing and development of the application.",
+        "Designing and development of new requirements and modules",
+        "Performance tuning of the application with respect to databases and java coding.",
+        "Release management and application deployment coordinator"
+      ],
+      "testimonials": [{
+        "description": "A very cool testimonial #1",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "A very cool testimonial #2",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Melbourne Water",
+      "technologies": [{
+        "name": "JSON",
+        "experience": "0"
+      }, {
+        "name": "JPA",
+        "experience": "0"
+      }, {
+        "name": "Java 7",
+        "experience": "0"
+      }, {
+        "name": "JavaScript",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "GWT 2.4",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Spring 3.1 (AOP",
+        "experience": "0"
+      }, {
+        "name": "MVC",
+        "experience": "0"
+      }, {
+        "name": "DAO)",
+        "experience": "0"
+      }, {
+        "name": "Hibernate 4.0",
+        "experience": "0"
+      }, {
+        "name": "AJAX",
+        "experience": "0"
+      }, {
+        "name": "JQuery",
+        "experience": "0"
+      }, {
+        "name": "Log4j 1.2.14",
+        "experience": "0"
+      }, {
+        "name": "MS SQL Server 2008",
+        "experience": "0"
+      }, {
+        "name": "Maven",
+        "experience": "0"
+      }, {
+        "name": "Eclipse",
+        "experience": "0"
+      }, {
+        "name": "SVN",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }, {
+        "name": "GeoServer 3.2.7",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }, {
+        "name": "IIS 7.5",
+        "experience": "0"
+      }]
+    }]
+  }, {
+    "name": "Sabre Travel Technologies",
+    "logo": "img/portfolio/sabre.png",
+    "location": {
+      "state": "",
+      "country": "",
+      "city": ""
     },
-    {
+    "designation": "Senior Software Developer",
+    "startDt": "03/2012",
+    "endDt": "12/2012",
+    "projects": [{
+      "name": "Travelocity.com Cruise Module (Travel Domain)",
+      "description": "Travelocity is an online travel portal for shopping and booking airline, hotel, and car and cruise line. Travelocity is the sixth largest travel agency booking $10.1 billion in travel worldwide in 2006. Based in Southlake, Texas, Travelocity has offices throughout the U.S. and also owns and operates Travelocity Business® for corporate travelers, lastminute.com, a leader in European online travel and ZUJI, a leader in Asia-Pacific online travel. Travelocity-Cruise module is specifically focused on shopping and booking cruises on different cruise lines such Oceania, Norwegian and many more.",
+      "role": "Module Leader",
+      "responsibilities": [
+        "Acting as module lead and POC for, Configuration and Change management tool (CCMTool) which is used to launch promotions and deals. And, Cruise-services and schedulers are sub systems used to send email and process vendor data for different cruises they support.",
+        "Mainly involved in client facing projects such as Royal Bank of Canada.",
+        "Designing and development of new requirements and modules",
+        "Training new resources on the application and project processes to bring them up to speed",
+        "Develop and maintain structured code from technical specifications and requirements.",
+        "Developing the High-level Design and Low-level design documents for the enhancement and getting it approved by the business analysts.",
+        "Currently working 12.12 release enhancements related to Travelocity cruise module.",
+        "Worked on performance tuning of the application with respect to databases and java coding.",
+        "Code review for my peers and helping them in their deliveries",
+        "Worked on localization and internationalization of the application."
+      ],
+      "testimonials": [{
+        "description": "A very cool testimonial #1",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "A very cool testimonial #2",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Product",
+      "technologies": [{
+        "name": "Java",
+        "experience": "0"
+      }, {
+        "name": "JavaScript",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "Shell Scripts",
+        "experience": "0"
+      }, {
+        "name": "PL-SQL",
+        "experience": "0"
+      }, {
+        "name": "ActionScripts",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Spring 3.0 (AOP",
+        "experience": "0"
+      }, {
+        "name": "MVC",
+        "experience": "0"
+      }, {
+        "name": "DAO)",
+        "experience": "0"
+      }, {
+        "name": "Hibernate",
+        "experience": "0"
+      }, {
+        "name": "Struts 1.x",
+        "experience": "0"
+      }, {
+        "name": "AJAX",
+        "experience": "0"
+      }, {
+        "name": "JQuery",
+        "experience": "0"
+      }, {
+        "name": "Adobe Flex 3.0",
+        "experience": "0"
+      }, {
+        "name": "Velocity DAO Templates",
+        "experience": "0"
+      }, {
+        "name": "Blaze-ds",
+        "experience": "0"
+      }, {
+        "name": "Maven",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "Eclipse",
+        "experience": "0"
+      }, {
+        "name": "IntelliJ",
+        "experience": "0"
+      }, {
+        "name": "JMeter",
+        "experience": "0"
+      }, {
+        "name": "Bugzilla",
+        "experience": "0"
+      }, {
+        "name": "Cygwin",
+        "experience": "0"
+      }, {
+        "name": "SQL Developer",
+        "experience": "0"
+      }, {
+        "name": "Hudson",
+        "experience": "0"
+      }, {
+        "name": "Build Environment",
+        "experience": "0"
+      }, {
+        "name": "TOAD",
+        "experience": "0"
+      }, {
+        "name": "Microsoft Visio",
+        "experience": "0"
+      }, {
+        "name": "UML",
+        "experience": "0"
+      }, {
+        "name": "Tortoise SVN and CVS",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }]
+    }]
+  }, {
+    "name": "Manhattan Associates",
+    "logo": "img/portfolio/manh.png",
+    "location": {
+      "state": "",
+      "country": "",
+      "city": ""
+    },
+    "designation": "Senior Software Engineerr",
+    "startDt": "03/2010",
+    "endDt": "03/2012",
+    "projects": [{
+      "name": "SCOPE Transport Lifecycle Management – Manual Consolidation Workspace (SCM)",
+      "description": "Manhattan Associates is a best-in-class global solutions provider for supply chain leaders—organizations intent on creating enduring market advantages by leveraging their supply chains. We help our customers successfully manage accelerating and fluctuating market demands, as well as master the increasing complexity and volatility of their local and global supply chains. Transport Lifecycle Management module which is used to crate shipments out of orders, both automatically and manually. Manual Consolidation Workspace is used to manually plan the shipments.",
+      "role": "Module Leader",
+      "responsibilities": [
+        "Developing the High-level Design and Low-level design documents for the enhancement and getting it approved by the BA’s.",
+        "I was the part of Transport Lifecycle Management migration from JSF to Spring 2.0.",
+        "Client delivery for Manual Consolidation Workspace module which was one of the best deliveries made to CNS and was highly appreciated by the client.",
+        "Worked on performance tuning of the application with respect to databases and java coding.",
+        "Code review for my peers and helping them in their deliveries",
+        "Worked on localization and internationalization of the application"
+      ],
+      "testimonials": [{
+        "description": "Client delivery for Manual Consolidation Workspace module, was one of the best deliveries made to CNS and was highly appreciated by the client.",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Created a Proof-of-concept for Automatic logging systems using AOP",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Product",
+      "technologies": [{
+        "name": "Java",
+        "experience": "0"
+      }, {
+        "name": "JavaScript",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "Shell Scripts",
+        "experience": "0"
+      }, {
+        "name": "PL-SQL",
+        "experience": "0"
+      }, {
+        "name": "ActionScripts",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Spring 3.0 (AOP",
+        "experience": "0"
+      }, {
+        "name": "MVC",
+        "experience": "0"
+      }, {
+        "name": "DAO)",
+        "experience": "0"
+      }, {
+        "name": "Hibernate",
+        "experience": "0"
+      }, {
+        "name": "Struts 1.x",
+        "experience": "0"
+      }, {
+        "name": "AJAX",
+        "experience": "0"
+      }, {
+        "name": "JQuery",
+        "experience": "0"
+      }, {
+        "name": "Adobe Flex 3.0",
+        "experience": "0"
+      }, {
+        "name": "Velocity DAO Templates",
+        "experience": "0"
+      }, {
+        "name": "Blaze-ds",
+        "experience": "0"
+      }, {
+        "name": "Maven",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "Eclipse",
+        "experience": "0"
+      }, {
+        "name": "IntelliJ",
+        "experience": "0"
+      }, {
+        "name": "JMeter",
+        "experience": "0"
+      }, {
+        "name": "Bugzilla",
+        "experience": "0"
+      }, {
+        "name": "Cygwin",
+        "experience": "0"
+      }, {
+        "name": "SQL Developer",
+        "experience": "0"
+      }, {
+        "name": "Hudson",
+        "experience": "0"
+      }, {
+        "name": "Build Environment",
+        "experience": "0"
+      }, {
+        "name": "TOAD",
+        "experience": "0"
+      }, {
+        "name": "Microsoft Visio",
+        "experience": "0"
+      }, {
+        "name": "UML",
+        "experience": "0"
+      }, {
+        "name": "Tortoise SVN and CVS",
+        "experience": "0"
+      }, {
+        "name": "SCRUM Agile",
+        "experience": "0"
+      }, {
+        "name": "Apache Tomcat 7",
+        "experience": "0"
+      }]
+    }]
+  }, {
+    "name": "Tech Mahindra Limited",
+    "logo": "img/portfolio/techm.png",
+    "location": {
+      "state": "",
+      "country": "",
+      "city": ""
+    },
+    "designation": "Senior Technical Associate",
+    "startDt": "03/2009",
+    "endDt": "03/2010",
+    "projects": [{
+      "name": "Phoenix – AT&T Services Inc. (Telecom Domain)",
+      "description": "Phoenix is a web application which is used by AT&T customer care representatives catering the small business customers, for their telecom products and services. The project was a CLIENT MANAGED PROJECT with daily status update and meetings.",
+      "role": "Senior Technical Associate",
+      "responsibilities": [
+        "Conducting training for new resources on product and technical knowledge.",
+        "Analyzing, designing, developing, unit testing and supporting the client application",
+        "Attending and conducting the client and peer review meetings to ensure the quality of the product",
+        "Documentation of the Design, Unit test plan and Code review documents",
+        "Configured the local workspace for Phoenix Offshore team",
+        "Configured the hot deployment for the application",
+        "Configured the debug environment for the application",
+        "Developed a automation BASH script to increase the productivity"
+      ],
+      "testimonials": [{
+        "description": "Received ATT (Director IT ) Client Appreciation  for RPA 1006 Release",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Received ‘Cookie’ (COA) award for excellent work in Phoenix",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Configured the local workspace for Phoenix Offshore team",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Configured the hot deployment for the application",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Configured the debug environment for the application",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Developed a automation BASH script to increase the productivity",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "AT&T",
+      "technologies": [{
+        "name": "Java",
+        "experience": "0"
+      }, {
+        "name": "JavaScript",
+        "experience": "0"
+      }, {
+        "name": "XML",
+        "experience": "0"
+      }, {
+        "name": "XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }, {
+        "name": "UNIX Bash and Korn Shell",
+        "experience": "0"
+      }, {
+        "name": "Oracle PL-SQL",
+        "experience": "0"
+      }, {
+        "name": "Web-services",
+        "experience": "0"
+      }, {
+        "name": "Struts 1.x",
+        "experience": "0"
+      }, {
+        "name": "EJB 2.0",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Maven",
+        "experience": "0"
+      }, {
+        "name": "Ant",
+        "experience": "0"
+      }, {
+        "name": "Clear Case",
+        "experience": "0"
+      }, {
+        "name": "Clear Quest",
+        "experience": "0"
+      }, {
+        "name": "Design Patterns",
+        "experience": "0"
+      }, {
+        "name": "UML",
+        "experience": "0"
+      }, {
+        "name": "SOAP UI",
+        "experience": "0"
+      }, {
+        "name": "Agile Test Drive Development",
+        "experience": "0"
+      }, {
+        "name": "Web-logic Application Server",
+        "experience": "0"
+      }]
+    }]
+  }, {
+    "name": "CSC Private Ltd",
+    "logo": "img/portfolio/csc.png",
+    "location": {
+      "state": "",
+      "country": "",
+      "city": ""
+    },
+    "designation": "Software Engineer",
+    "startDt": "10/2006",
+    "endDt": "03/2009",
+    "projects": [{
+      "name": "Life Underwriting System (LUS) (Underwriting Domain)",
+      "description": "LUS is a CSC’s legacy product used to help life insurance underwriters for analyzing and approving/rejecting life insurance policies. This application has an interface with Cyber-life Mainframe systems to fetch the life insurance policy details. ",
+      "role": "Software Engineer",
+      "responsibilities": [
+        "Played the role of on-site coordinator and technical lead",
+        "Conducted reverse knowledge transfer to share our understanding of the system",
+        "Training my peers on the product and technical knowledge",
+        "Designing, developing, unit testing and supporting the product and developing new utilities"
+      ],
+      "testimonials": [{
+        "description": "Developed 4 utilities, Admin2LUS, Primary Checks, App-on-line Verification  and Final Action Status Print Creation",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Developed a SQL Stored Procedure based utility to fix 100 requirement clients",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Setting up the debugging environment for  the existing system",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "An annual cost saving of $78,650 using above utilities",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Awarded two Certificate Of Appreciation (COA) award for developing utilities and excellent work",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Awarded two BRAVO Award from the Client Manager (US, Allstate Insurance) for resolving a complex problem and Data Centre Migration Project completion",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Allstate Insurance, Northbrook, USA",
+      "technologies": [{
+        "name": "Core Java",
+        "experience": "0"
+      }, {
+        "name": "C#",
+        "experience": "0"
+      }, {
+        "name": "C++",
+        "experience": "0"
+      }, {
+        "name": "VB.net",
+        "experience": "0"
+      }, {
+        "name": "VB Excel Macros",
+        "experience": "0"
+      }, {
+        "name": "MSMQ",
+        "experience": "0"
+      }, {
+        "name": "Data-alliance formats",
+        "experience": "0"
+      }, {
+        "name": "MS SQL Server",
+        "experience": "0"
+      }, {
+        "name": "VSS",
+        "experience": "0"
+      }, {
+        "name": "FTP",
+        "experience": "0"
+      }, {
+        "name": "Shell Scripts",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Resource Management System (RMS)",
+      "description": "RMS is a CSC in-house application which was developed for internal program management. The application was a web based portal which is used to manage projects, assignments, tasks and resources. This tool also manages the resource allocation and future resource travel planning.",
+      "role": "Technical Leader",
+      "responsibilities": [
+        "Responsible for the delivery of the projects and leading a team of four",
+        "Responsible for gathering the requirements, creating the design documents.",
+        "Developed a major module which deals with the graphical chart representations",
+        "Trained my team in the Struts framework",
+        "The application was highly appreciated by the CSC managers"
+      ],
+      "testimonials": [{
+        "description": "Learned Struts and conducted a session for my team mates",
+        "company": "",
+        "givenBy": ""
+      }, {
+        "description": "Created a Horizontal Bar Chart for representing resource’s future resource travel plans",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "Product",
+      "technologies": [{
+        "name": "Struts 1.x MVC",
+        "experience": "0"
+      }, {
+        "name": "J2EE",
+        "experience": "0"
+      }, {
+        "name": "Oracle",
+        "experience": "0"
+      }, {
+        "name": "Websphere server",
+        "experience": "0"
+      }, {
+        "name": "JFreeCharts",
+        "experience": "0"
+      }, {
+        "name": "Design Patterns",
+        "experience": "0"
+      }, {
+        "name": "UML",
+        "experience": "0"
+      }, {
+        "name": "VSS",
+        "experience": "0"
+      }, {
+        "name": "XML/XSLT",
+        "experience": "0"
+      }, {
+        "name": "XSD",
+        "experience": "0"
+      }]
+    }]
+  }, {
+    "name": "Syntel Private Ltd",
+    "logo": "img/portfolio/syntel.png",
+    "location": {
+      "state": "",
+      "country": "",
+      "city": ""
+    },
+    "designation": "Analyst Programmer",
+    "startDt": "09/2005",
+    "endDt": "10/2006",
+    "projects": [{
+      "name": "Inspection Stage Document Mgmt. System (ISDMS)",
+      "description": "ISDMS was a Product Lifecycle Management customization done for L&T to automate the documentation of seam management process. The project was done on existing Product lifecycle management implementation and involves different functionality to approve a seam and manage reports.",
+      "role": "Senior Technical Associate",
+      "responsibilities": [
+        "Responsible for designing, developing and testing a module in ISDMS called RTUT (Radioactive and ultraviolet testing) module"
+      ],
+      "testimonials": [{
         "description": "",
         "company": "",
         "givenBy": ""
-    }
-],
-    "personalProjects": [
-        {
-            "name": "Anti-theft Android Mobile Application",
-            "logo":"img/portfolio/antitheft.png",
-            "description": "A generic android application designed to track a mobile when the user is not able to locate it in his/her vicinity. The application is integrated with the social media sites such as Facebook, twitter etc. using mobile internet, in order to track the device location when in contingency. The application will post device location on these social media. Also if the internet is not available the application will send our messages to the alternate number configured by the user. Once the user configured the application it will run as a background process to broadcast the device location on social media sites.",
-            "role": "",
-            "responsibilities": ["Following the Agile development methodology to design and develop the application.", "Owner of the conception, design and development of the application.", "Also following project management practices for planning and to achieve the milestones."],
-            "testimonials": [
-                {
-                    "description": "",
-                    "company": "",
-                    "givenBy": ""
-                }
-            ],
-            "client": "Self",
-            "technologies": [
-                {
-                    "name": "Java/J2EE",
-                    "experience": "0"
-                },
-                {
-                    "name": "Android API 16",
-                    "experience": "0"
-                },
-                {
-                    "name": "Android SQLite",
-                    "experience": "0"
-                },
-                {
-                    "name": "Eclipse ADT",
-                    "experience": "0"
-                },
-                {
-                    "name": "Android SDK",
-                    "experience": "0"
-                },
-                {
-                    "name": "XML",
-                    "experience": "0"
-                },
-                {
-                    "name": "Facebook API",
-                    "experience": "0"
-                },
-                {
-                    "name": "Twitter API.",
-                    "experience": "0"
-                }
-            ]
-        },
-        {
-            "name": "Hack-a-thon – Roaming Gnome",
-            "logo":"img/portfolio/gnome.png",
-            "description": "This application was built in 3 days for the organization level event called as Hack-a-thon. The application was an android based mobile application for assisting the Cruise customer by updating them about the events happening on the Cruise enjoying their vacation. The application gets periodic event information feeds (XML) from the 3rd party service called Aker. Then using the android calendar support the application will update the event schedule hence informing user about the things and events going on different parts of the Cruise.",
-            "role": "",
-            "responsibilities": ["Requirement gathering, Analysis, Designing and developing the application"],
-            "testimonials": [
-                {
-                    "description": "",
-                    "company": "",
-                    "givenBy": ""
-                }
-            ],
-            "client": "Sabre Holdings",
-            "technologies": [
-                {
-                    "name": "Java/J2EE",
-                    "experience": "0"
-                },
-                {
-                    "name": "Android API 16",
-                    "experience": "0"
-                },
-                {
-                    "name": "Android SQLite",
-                    "experience": "0"
-                },
-                {
-                    "name": "Eclipse ADT",
-                    "experience": "0"
-                },
-                {
-                    "name": "Android SDK",
-                    "experience": "0"
-                },
-                {
-                    "name": "XML",
-                    "experience": "0"
-                },
-                {
-                    "name": "Facebook API",
-                    "experience": "0"
-                },
-                {
-                    "name": "Twitter API.",
-                    "experience": "0"
-                }
-            ]
-        },
-        {
-            "name": "Portfolio (this.website)",
-            "logo":"img/portfolio/thisportfolio.png",
-            "description": "The web application which gives a brief introduction about my 8+ years of software development career.",
-            "role": "",
-            "responsibilities": ["Requirement gathering, Analysis, Designing and developing the application"],
-            "testimonials": [
-                {
-                    "description": "",
-                    "company": "",
-                    "givenBy": ""
-                }
-            ],
-            "client": "Self",
-            "technologies": [
-                {
-                    "name": "Spring RESTful Web Service",
-                    "experience": "0"
-                },
-                {
-                    "name": "MongoDB",
-                    "experience": "0"
-                },
-                {
-                    "name": "Backbone.js",
-                    "experience": "0"
-                },
-                {
-                    "name": "Handlebars.js",
-                    "experience": "0"
-                },
-                {
-                    "name": "Underscore.js",
-                    "experience": "0"
-                },
-                {
-                    "name": "JQuery UI",
-                    "experience": "0"
-                },
-                {
-                    "name": "Jetty",
-                    "experience": "0"
-                },
-                {
-                    "name": "Git/GitHub",
-                    "experience": "0"
-                },
-                {
-                    "name": "Maven",
-                    "experience": "0"
-                }
-            ]
-        }
-    ], "contactMe": "Thank you for dropping by! \n\nPlease provide me your contact details and I will get in touch with you"}
+      }],
+      "client": "Indian Navy",
+      "technologies": [{
+        "name": "EDS Teamcenter",
+        "experience": "0"
+      }, {
+        "name": " Oracle",
+        "experience": "0"
+      }, {
+        "name": " XML/XSLT",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Pay Store GPP Rewrite",
+      "description": "This was a re-engineering project for American Express Gift Card business",
+      "role": "Analyst Programmer",
+      "responsibilities": [
+        "Creating Functional Understanding Document (FUD) for the existing systems to gather the requirements"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "American Express",
+      "technologies": [{
+        "name": "Coolplex",
+        "experience": "0"
+      }, {
+        "name": "AIS 400",
+        "experience": "0"
+      }]
+    }, {
+      "name": "Maintenance and enhancements of the existing PLM system",
+      "description": "ISDMS was a Product Lifecycle Management customization done for L&T to automate the documentation of seam management process. The project was done on existing Product lifecycle management implementation and involves different functionality to approve a seam and manage reports.",
+      "role": "Analyst Programmer",
+      "responsibilities": [
+        "Defect management and timely resolution of the critical issues and bugs in the existing PLM implementation"
+      ],
+      "testimonials": [{
+        "description": "",
+        "company": "",
+        "givenBy": ""
+      }],
+      "client": "OTIS",
+      "technologies": [{
+        "name": "EDS Teamcenter",
+        "experience": "0"
+      }, {
+        "name": " Oracle",
+        "experience": "0"
+      }, {
+        "name": " XML/XSLT",
+        "experience": "0"
+      }]
+    }]
+  }],
+  "allTechnologies": [{
+    "name": "GWT 2.4",
+    "experience": "0"
+  }, {
+    "name": "Mule Studio",
+    "experience": "0"
+  }, {
+    "name": "Blaze-ds",
+    "experience": "0"
+  }, {
+    "name": "Hibernate 4",
+    "experience": "0"
+  }, {
+    "name": "RESTful Web Service",
+    "experience": "0"
+  }, {
+    "name": "MuleESB",
+    "experience": "0"
+  }, {
+    "name": "JMeter",
+    "experience": "0"
+  }, {
+    "name": "DAO",
+    "experience": "0"
+  }, {
+    "name": "Selenium WebDriver",
+    "experience": "0"
+  }, {
+    "name": "AJAX",
+    "experience": "0"
+  }, {
+    "name": "VB.net",
+    "experience": "0"
+  }, {
+    "name": "Handlebars.js",
+    "experience": "0"
+  }, {
+    "name": "MongoUI",
+    "experience": "0"
+  }, {
+    "name": "Oracle PL-SQL",
+    "experience": "0"
+  }, {
+    "name": "Data-alliance formats",
+    "experience": "0"
+  }, {
+    "name": "Hudson",
+    "experience": "0"
+  }, {
+    "name": "MSMQ",
+    "experience": "0"
+  }, {
+    "name": "MongoDB",
+    "experience": "0"
+  }, {
+    "name": "Hibernate",
+    "experience": "0"
+  }, {
+    "name": "PL-SQL",
+    "experience": "0"
+  }, {
+    "name": "Java 7",
+    "experience": "0"
+  }, {
+    "name": "MVC",
+    "experience": "0"
+  }, {
+    "name": "Quartz Job Scheduler",
+    "experience": "0"
+  }, {
+    "name": "JQuery",
+    "experience": "0"
+  }, {
+    "name": "PowerMockito",
+    "experience": "0"
+  }, {
+    "name": "Finagle",
+    "experience": "0"
+  }, {
+    "name": "Shell Scripts",
+    "experience": "0"
+  }, {
+    "name": "Oracle",
+    "experience": "0"
+  }, {
+    "name": "Bamboo",
+    "experience": "0"
+  }, {
+    "name": "AIS 400",
+    "experience": "0"
+  }, {
+    "name": "Jenkins",
+    "experience": "0"
+  }, {
+    "name": "Log4j 1.2.14",
+    "experience": "0"
+  }, {
+    "name": "XSD",
+    "experience": "0"
+  }, {
+    "name": "Tortoise SVN and CVS",
+    "experience": "0"
+  }, {
+    "name": "Clear Case",
+    "experience": "0"
+  }, {
+    "name": "MySQL",
+    "experience": "0"
+  }, {
+    "name": "AspectJ",
+    "experience": "0"
+  }, {
+    "name": "Build Environment",
+    "experience": "0"
+  }, {
+    "name": "FTP",
+    "experience": "0"
+  }, {
+    "name": "JSON",
+    "experience": "0"
+  }, {
+    "name": "Glassfish",
+    "experience": "0"
+  }, {
+    "name": " Oracle",
+    "experience": "0"
+  }, {
+    "name": "VSS",
+    "experience": "0"
+  }, {
+    "name": "JQuery-mobile",
+    "experience": "0"
+  }, {
+    "name": "Hibernate 4.0",
+    "experience": "0"
+  }, {
+    "name": "Cobertura",
+    "experience": "0"
+  }, {
+    "name": "IIS 7.5",
+    "experience": "0"
+  }, {
+    "name": "JPA",
+    "experience": "0"
+  }, {
+    "name": " XML/XSLT",
+    "experience": "0"
+  }, {
+    "name": "Zookeeper",
+    "experience": "0"
+  }, {
+    "name": "J2EE",
+    "experience": "0"
+  }, {
+    "name": "Tomcat",
+    "experience": "0"
+  }, {
+    "name": "GeoServer 3.2.7",
+    "experience": "0"
+  }, {
+    "name": "VB Excel Macros",
+    "experience": "0"
+  }, {
+    "name": "Lo-dash.js",
+    "experience": "0"
+  }, {
+    "name": "XML",
+    "experience": "0"
+  }, {
+    "name": "ActiveVOS",
+    "experience": "0"
+  }, {
+    "name": "Eclipse",
+    "experience": "0"
+  }, {
+    "name": "EJB 2.0",
+    "experience": "0"
+  }, {
+    "name": "SOAP UI",
+    "experience": "0"
+  }, {
+    "name": "Shell Scripting",
+    "experience": "0"
+  }, {
+    "name": "XML/XSLT",
+    "experience": "0"
+  }, {
+    "name": "Vert.x",
+    "experience": "0"
+  }, {
+    "name": "Struts 1.x",
+    "experience": "0"
+  }, {
+    "name": "Spring 3.0 (AOP",
+    "experience": "0"
+  }, {
+    "name": "Java",
+    "experience": "0"
+  }, {
+    "name": "SOAPUI",
+    "experience": "0"
+  }, {
+    "name": "Design Patterns",
+    "experience": "0"
+  }, {
+    "name": "Jetty",
+    "experience": "0"
+  }, {
+    "name": "Maven",
+    "experience": "0"
+  }, {
+    "name": "Velocity DAO Templates",
+    "experience": "0"
+  }, {
+    "name": "Adobe Flex 3.0",
+    "experience": "0"
+  }, {
+    "name": "Bugzilla",
+    "experience": "0"
+  }, {
+    "name": "Redis",
+    "experience": "0"
+  }, {
+    "name": "Apache Tomcat 7",
+    "experience": "0"
+  }, {
+    "name": "Visio",
+    "experience": "0"
+  }, {
+    "name": "MSVisio",
+    "experience": "0"
+  }, {
+    "name": "Microsoft",
+    "experience": "0"
+  }, {
+    "name": "EDS Teamcenter",
+    "experience": "0"
+  }, {
+    "name": "RESTful services)",
+    "experience": "0"
+  }, {
+    "name": "DAO)",
+    "experience": "0"
+  }, {
+    "name": "SCRUM Agile",
+    "experience": "0"
+  }, {
+    "name": "Web-logic Application Server",
+    "experience": "0"
+  }, {
+    "name": "UML",
+    "experience": "0"
+  }, {
+    "name": "JavaScript",
+    "experience": "0"
+  }, {
+    "name": "Git Stash",
+    "experience": "0"
+  }, {
+    "name": "TOAD",
+    "experience": "0"
+  }, {
+    "name": "REST)",
+    "experience": "0"
+  }, {
+    "name": "Ant",
+    "experience": "0"
+  }, {
+    "name": "Coolplex",
+    "experience": "0"
+  }, {
+    "name": "Storm",
+    "experience": "0"
+  }, {
+    "name": "Spring 3.1 (AOP",
+    "experience": "0"
+  }, {
+    "name": "Cygwin",
+    "experience": "0"
+  }, {
+    "name": "Clear Quest",
+    "experience": "0"
+  }, {
+    "name": "Junit",
+    "experience": "0"
+  }, {
+    "name": "Struts 1.x MVC",
+    "experience": "0"
+  }, {
+    "name": "Backbone.js",
+    "experience": "0"
+  }, {
+    "name": "MS SQL Server 2008",
+    "experience": "0"
+  }, {
+    "name": "C#",
+    "experience": "0"
+  }, {
+    "name": "ActionScripts",
+    "experience": "0"
+  }, {
+    "name": "Core Java",
+    "experience": "0"
+  }, {
+    "name": "Linux BASH shell",
+    "experience": "0"
+  }, {
+    "name": "IntelliJ",
+    "experience": "0"
+  }, {
+    "name": "JFreeCharts",
+    "experience": "0"
+  }, {
+    "name": "SCRUM",
+    "experience": "0"
+  }, {
+    "name": "XSLT",
+    "experience": "0"
+  }, {
+    "name": "Microsoft Visio",
+    "experience": "0"
+  }, {
+    "name": "Web-services",
+    "experience": "0"
+  }, {
+    "name": "Agile Test Drive Development",
+    "experience": "0"
+  }, {
+    "name": "OpenLayers.js",
+    "experience": "0"
+  }, {
+    "name": "SQL Developer",
+    "experience": "0"
+  }, {
+    "name": "UNIX Bash and Korn Shell",
+    "experience": "0"
+  }, {
+    "name": "SVG",
+    "experience": "0"
+  }, {
+    "name": "MS SQL Server",
+    "experience": "0"
+  }, {
+    "name": "d3.js",
+    "experience": "0"
+  }, {
+    "name": "Git",
+    "experience": "0"
+  }, {
+    "name": "Websphere server",
+    "experience": "0"
+  }, {
+    "name": "C++",
+    "experience": "0"
+  }, {
+    "name": "Mockito",
+    "experience": "0"
+  }, {
+    "name": "SVN",
+    "experience": "0"
+  }],
+  "allTestimonials": [{
+    "description": "",
+    "company": "",
+    "givenBy": ""
+  }, {
+    "description": "",
+    "company": "",
+    "givenBy": ""
+  }],
+  "personalProjects": [{
+    "name": "Anti-theft Android Mobile Application",
+    "logo": "img/portfolio/antitheft.png",
+    "description": "A generic android application designed to track a mobile when the user is not able to locate it in his/her vicinity. The application is integrated with the social media sites such as Facebook, twitter etc. using mobile internet, in order to track the device location when in contingency. The application will post device location on these social media. Also if the internet is not available the application will send our messages to the alternate number configured by the user. Once the user configured the application it will run as a background process to broadcast the device location on social media sites.",
+    "role": "",
+    "responsibilities": [
+      "Following the Agile development methodology to design and develop the application.",
+      "Owner of the conception, design and development of the application.",
+      "Also following project management practices for planning and to achieve the milestones."
+    ],
+    "testimonials": [{
+      "description": "",
+      "company": "",
+      "givenBy": ""
+    }],
+    "client": "Self",
+    "technologies": [{
+      "name": "Java/J2EE",
+      "experience": "0"
+    }, {
+      "name": "Android API 16",
+      "experience": "0"
+    }, {
+      "name": "Android SQLite",
+      "experience": "0"
+    }, {
+      "name": "Eclipse ADT",
+      "experience": "0"
+    }, {
+      "name": "Android SDK",
+      "experience": "0"
+    }, {
+      "name": "XML",
+      "experience": "0"
+    }, {
+      "name": "Facebook API",
+      "experience": "0"
+    }, {
+      "name": "Twitter API.",
+      "experience": "0"
+    }]
+  }, {
+    "name": "Hack-a-thon – Roaming Gnome",
+    "logo": "img/portfolio/gnome.png",
+    "description": "This application was built in 3 days for the organization level event called as Hack-a-thon. The application was an android based mobile application for assisting the Cruise customer by updating them about the events happening on the Cruise enjoying their vacation. The application gets periodic event information feeds (XML) from the 3rd party service called Aker. Then using the android calendar support the application will update the event schedule hence informing user about the things and events going on different parts of the Cruise.",
+    "role": "",
+    "responsibilities": [
+      "Requirement gathering, Analysis, Designing and developing the application"
+    ],
+    "testimonials": [{
+      "description": "",
+      "company": "",
+      "givenBy": ""
+    }],
+    "client": "Sabre Holdings",
+    "technologies": [{
+      "name": "Java/J2EE",
+      "experience": "0"
+    }, {
+      "name": "Android API 16",
+      "experience": "0"
+    }, {
+      "name": "Android SQLite",
+      "experience": "0"
+    }, {
+      "name": "Eclipse ADT",
+      "experience": "0"
+    }, {
+      "name": "Android SDK",
+      "experience": "0"
+    }, {
+      "name": "XML",
+      "experience": "0"
+    }, {
+      "name": "Facebook API",
+      "experience": "0"
+    }, {
+      "name": "Twitter API.",
+      "experience": "0"
+    }]
+  }, {
+    "name": "Portfolio (this.website)",
+    "logo": "img/portfolio/thisportfolio.png",
+    "description": "The web application which gives a brief introduction about my 8+ years of software development career.",
+    "role": "",
+    "responsibilities": [
+      "Requirement gathering, Analysis, Designing and developing the application"
+    ],
+    "testimonials": [{
+      "description": "",
+      "company": "",
+      "givenBy": ""
+    }],
+    "client": "Self",
+    "technologies": [{
+      "name": "Spring RESTful Web Service",
+      "experience": "0"
+    }, {
+      "name": "MongoDB",
+      "experience": "0"
+    }, {
+      "name": "Backbone.js",
+      "experience": "0"
+    }, {
+      "name": "Handlebars.js",
+      "experience": "0"
+    }, {
+      "name": "Underscore.js",
+      "experience": "0"
+    }, {
+      "name": "JQuery UI",
+      "experience": "0"
+    }, {
+      "name": "Jetty",
+      "experience": "0"
+    }, {
+      "name": "Git/GitHub",
+      "experience": "0"
+    }, {
+      "name": "Maven",
+      "experience": "0"
+    }]
+  }],
+  "contactMe": "Thank you for dropping by! \n\nPlease provide me your contact details and I will get in touch with you"
+}
