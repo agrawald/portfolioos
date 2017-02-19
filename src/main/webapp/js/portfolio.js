@@ -1,6 +1,6 @@
 $(function(){
     var Portfolio = Backbone.Model.extend({
-        urlRoot: '/api/portfolio',
+        urlRoot: '/api/portfolio/file',
         idAttribute: 'id',
         url: function(){
             return this.urlRoot;
@@ -19,7 +19,7 @@ $(function(){
         userId: 'dagrawal',
         model: Portfolio,
         url:function(){
-            return '/api/portfolio/' + this.userId;
+            return '/api/portfolio/file/' + this.userId;
         }
     });
 

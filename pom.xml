@@ -42,16 +42,6 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.2-1003-jdbc4</version>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.25</version>
-		</dependency>     
-		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
@@ -247,7 +237,7 @@
 			<!-- By default that is to put the resulting archive into the 'webapps' 
 				folder. -->
 			<!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
-			<id>openshift</id>
+			<id>AWS</id>
 			<build>
 				<finalName>cv</finalName>
 				<plugins>
